@@ -26,13 +26,13 @@
         <div class="d-flex align-items-center logo-box justify-content-start">
           <!-- Logo -->
           <a href="index.html" class="logo">
-            <!-- logo-->       
+            <!-- logo-->
             <div class="logo-lg">
               <span class="light-logo"
                 ><img
                   src="../images/logo/logo-rfe.png"
                   alt="logo"
-                  style="width: 126px;"
+                  style="width: 126px"
               /></span>
             </div>
           </a>
@@ -48,10 +48,7 @@
               <li class="btn-group nav-item d-lg-inline-flex d-none">
                 <a href="#" title="Notifications">
                   <i>
-                    <img
-                      src="../assets/icons/custom/notif.svg"
-                      alt="notif"
-                    />
+                    <img src="../assets/icons/custom/notif.svg" alt="notif" />
                   </i>
                 </a>
               </li>
@@ -97,7 +94,7 @@
                     <a class="dropdown-item" href="extra_profile.html"
                       ><i class="ti-user text-muted me-2"></i> Profile</a
                     >
-                    <a class="dropdown-item" href="auth_login.html"
+                    <a class="dropdown-item" href="../index.html"
                       ><i class="ti-lock text-muted me-2"></i> Logout</a
                     >
                   </li>
@@ -126,6 +123,52 @@
                     <span>Dashboard</span>
                   </a>
                 </li>
+                <li class="treeview">
+                  <a href="#">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/school.svg"
+                        alt="ic-dashboard"
+                      />
+                    </i>
+                    <span>Data Sekolah</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Daftar Kelas</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Daftar Jurusan</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Daftar Guru</a
+                      >
+                    </li>
+                  </ul>
+                </li>
                 <li>
                   <a href="insight.html">
                     <i>
@@ -148,7 +191,7 @@
                     <span>Pemantauan Tes</span>
                   </a>
                 </li>
-                <li>
+                <li class="treeview">
                   <a href="reports.html">
                     <i>
                       <img
@@ -157,18 +200,31 @@
                       />
                     </i>
                     <span>Konseling</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
                   </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <i>
-                      <img
-                        src="../assets/icons/custom/counseling_room.svg"
-                        alt="ic-counseling-room"
-                      />
-                    </i>
-                    <span>Ruang Konseling</span>
-                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Kalender</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Ruang Konseling</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li>
                   <a href="reports.html">
@@ -215,129 +271,238 @@
           <!-- Main content -->
           <section class="content">
             <div class="row">
-              <div class="box">
-                <div class="box-body">
-                  <div class="row">
-                    <div class="col-xxxl-4 col-xl-4 col-lg-6">
-                      <div class="row vitals">
-                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
-                          <a
-                            class="box box-link-shadow rounded bg-light pull-up"
-                            href="javascript:void(0)"
-                          >
-                            <div class="box-body py-20">
-                              <p class="fw-600 text-fade mb-20">Register</p>
-                              <h3 class="fw-600 text-purple mb-5">155</h3>
-                              <p class="fw-500 text-fade">Student</p>
-                            </div>
-                          </a>
+              <div class="col-xxxl-4 col-xl-4 col-lg-6">
+                <div class="row vitals">
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <a
+                      class="box box-link-shadow rounded bg-light pull-up"
+                      href="javascript:void(0)"
+                    >
+                      <div class="box-body py-20">
+                        <p class="fw-600 text-fade mb-20">Register</p>
+                        <h3 class="fw-600 text-purple mb-5">155</h3>
+                        <p class="fw-500 text-fade">Student</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <a
+                      class="box box-link-shadow rounded bg-light pull-up"
+                      href="javascript:void(0)"
+                    >
+                      <div class="box-body py-20">
+                        <p class="fw-600 text-fade mb-20">Counseling</p>
+                        <h3 class="fw-600 text-purple mb-5">24</h3>
+                        <p class="fw-500 text-fade">Session</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <a
+                      class="box box-link-shadow rounded bg-success hover-white mb-sm-0 pull-up"
+                      href="javascript:void(0)"
+                    >
+                      <div class="box-body py-20">
+                        <p class="fw-600 mb-20">Assessment</p>
+                        <h3 class="fw-600 mb-5">20%</h3>
+                        <p class="fw-500 m-0">2 dari 10</p>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-12 col-xl-6 col-lg-6 col-md-6">
+                    <a
+                      class="box box-link-shadow rounded bg-light mb-0 pull-up"
+                      href="javascript:void(0)"
+                    >
+                      <div class="box-body py-20">
+                        <p class="fw-600 text-fade mb-20">Kotak Curhat</p>
+                        <h3 class="fw-600 text-dark mb-5">77</h3>
+                        <p class="fw-500 text-fade m-0">Pesan</p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xxxl-8 col-xl-8 col-lg-6">
+                <div class="chart-section">
+                  <button class="waves-effect waves-light btn btn-success mb-5">
+                    Week
+                  </button>
+                  <button class="waves-effect waves-light btn btn-light mb-5">
+                    Month
+                  </button>
+                  <div id="statistics"></div>
+                </div>
+              </div>
+            </div>
+            <div class="row mt-4">
+              <div class="col-12">
+                <h1 class="table-title">Tingkat Kepribadian Seluruh Siswa</h1>
+              </div>
+              <div class="row mt-3">
+                <div class="col-md-4 col-12">
+                  <div class="box">
+                    <div
+                      class="box-body px-0 d-flex align-items-center justify-content-center"
+                      style="gap: 24px"
+                    >
+                      <div class="text-center">
+                        <input
+                          class="knob"
+                          data-width="88"
+                          data-height="88"
+                          data-min="-100"
+                          data-fgColor="#F98B06"
+                          data-displayPrevious="true"
+                          value="60"
+                          data-readOnly="true"
+                        />
+                      </div>
+                      <div class="ml-5">
+                        <h4 class="title-card-percent mt-0">Tingkat Stress</h4>
+                        <div class="text-start">
+                          <span
+                            class="badge badge-xl badge-dot me-10"
+                            style="background-color: #36c8e3"
+                          ></span>
+                          Laki-laki 60%
                         </div>
-                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
-                          <a
-                            class="box box-link-shadow rounded bg-light pull-up"
-                            href="javascript:void(0)"
-                          >
-                            <div class="box-body py-20">
-                              <p class="fw-600 text-fade mb-20">Counseling</p>
-                              <h3 class="fw-600 text-purple mb-5">24</h3>
-                              <p class="fw-500 text-fade">Session</p>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
-                          <a
-                            class="box box-link-shadow rounded bg-success hover-white mb-sm-0 pull-up"
-                            href="javascript:void(0)"
-                          >
-                            <div class="box-body py-20">
-                              <p class="fw-600 mb-20">Assessment</p>
-                              <h3 class="fw-600 mb-5">20%</h3>
-                              <p class="fw-500 m-0">2 dari 10</p>
-                            </div>
-                          </a>
-                        </div>
-                        <div class="col-12 col-xl-6 col-lg-6 col-md-6">
-                          <a
-                            class="box box-link-shadow rounded bg-light mb-0 pull-up"
-                            href="javascript:void(0)"
-                          >
-                            <div class="box-body py-20">
-                              <p class="fw-600 text-fade mb-20">Kotak Curhat</p>
-                              <h3 class="fw-600 text-dark mb-5">77</h3>
-                              <p class="fw-500 text-fade m-0">Pesan</p>
-                            </div>
-                          </a>
+                        <div class="text-start">
+                          <span
+                            class="badge badge-xl badge-dot me-10"
+                            style="background-color: #ff9c90"
+                          ></span>
+                          Perempuan 40%
                         </div>
                       </div>
                     </div>
-                    <div class="col-xxxl-8 col-xl-8 col-lg-6">
-                      <div class="chart-section">
-                        <button
-                          class="waves-effect waves-light btn btn-success mb-5"
-                        >
-                          Week
-                        </button>
-                        <button
-                          class="waves-effect waves-light btn btn-light mb-5"
-                        >
-                          Month
-                        </button>
-                        <div id="statistics"></div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="box">
+                    <div
+                      class="box-body px-0 d-flex align-items-center justify-content-center"
+                      style="gap: 24px"
+                    >
+                      <div class="text-center">
+                        <input
+                          class="knob"
+                          data-width="88"
+                          data-height="88"
+                          data-min="-100"
+                          data-fgColor="#75519E"
+                          data-displayPrevious="true"
+                          value="60"
+                          data-readOnly="true"
+                        />
+                      </div>
+                      <div class="ml-5">
+                        <h4 class="title-card-percent mt-0">
+                          Tingkat Kecemasan
+                        </h4>
+                        <div class="text-start">
+                          <span
+                            class="badge badge-xl badge-dot me-10"
+                            style="background-color: #36c8e3"
+                          ></span>
+                          Laki-laki 60%
+                        </div>
+                        <div class="text-start">
+                          <span
+                            class="badge badge-xl badge-dot me-10"
+                            style="background-color: #ff9c90"
+                          ></span>
+                          Perempuan 40%
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <div class="box">
+                    <div
+                      class="box-body px-0 d-flex align-items-center justify-content-center"
+                      style="gap: 24px"
+                    >
+                      <div class="text-center">
+                        <input
+                          class="knob"
+                          data-width="88"
+                          data-height="88"
+                          data-min="-100"
+                          data-fgColor="#DB6C69"
+                          data-displayPrevious="true"
+                          value="65"
+                          data-readOnly="true"
+                        />
+                      </div>
+                      <div class="ml-5">
+                        <h4 class="title-card-percent mt-0">
+                          Tingkat Kecemasan
+                        </h4>
+                        <div class="text-start">
+                          <span
+                            class="badge badge-xl badge-dot me-10"
+                            style="background-color: #36c8e3"
+                          ></span>
+                          Laki-laki 65%
+                        </div>
+                        <div class="text-start">
+                          <span
+                            class="badge badge-xl badge-dot me-10"
+                            style="background-color: #ff9c90"
+                          ></span>
+                          Perempuan 35%
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-12">
-                <h1 class="table-title">
+            <div>
+              <div>
+                <h2 class="table-title">
                   Aktivitas Tes Kesehatan Mental Siswa
-                </h1>
+                </h2>
                 <p class="table-desc">
                   Daftar Aktivitas Tes Kesehatan Mental Setiap Siswa
                 </p>
-                <div class="box">
-                  <div class="box-body">
-                    <div class="table-responsive rounded card-table">
-                      <table class="table border-no" id="example1">
-                        <thead>
-                          <tr>
-                            <th>NOMOR INDUK SISWA</th>
-                            <th>TANGGAL MULAI</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>INDIKATOR PENGUKURAN</th>
-                            <th>KELAS</th>
-                            <th>STATUS</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="hover-primary">
-                            <td>#p245879</td>
-                            <td>14 April 2021, 10:30 AM</td>
-                            <td>Aaliyah clark</td>
-                            <td>Dr. Johen Doe</td>
-                            <td>XII IPS 1</td>
-                            <td>
-                              <span class="badge-ongoing"
-                                >Sedang Berlangsung</span
-                              >
-                            </td>
-                          </tr>
-                          <tr class="hover-primary">
-                            <td>#p245879</td>
-                            <td>14 April 2021, 10:30 AM</td>
-                            <td>Aaliyah clark</td>
-                            <td>Dr. Johen Doe</td>
-                            <td>XII IPS 1</td>
-                            <td>
-                              <span class="badge-done">Telah Selesai</span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+                <div class="table-responsive">
+                  <table class="table">
+                    <thead style="background-color: rgba(240, 245, 249, 0.5);">
+                      <tr style="font-size: 12px; color: #ABC3D2;">
+                        <th>NOMOR INDUK SISWA</th>
+                        <th>TANGGAL MULAI</th>
+                        <th>NAMA LENGKAP</th>
+                        <th>INDIKATOR PENGUKURAN</th>
+                        <th>KELAS</th>
+                        <th>STATUS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr style="font-size: 13px; color: #5887A4;">
+                        <td>#p245879</td>
+                        <td>14 April 2021, 10:30 AM</td>
+                        <td>Aaliyah clark</td>
+                        <td>Dr. Johen Doe</td>
+                        <td>XII IPS 1</td>
+                        <td class="py-4">
+                          <span class="badge-ongoing">Sedang Berlangsung</span>
+                        </td>
+                      </tr>
+                      <tr style="font-size: 13px; color: #5887A4;">
+                        <td>#p245879</td>
+                        <td>14 April 2021, 10:30 AM</td>
+                        <td>Aaliyah clark</td>
+                        <td>Dr. Johen Doe</td>
+                        <td>XII IPS 1</td>
+                        <td class="py-4">
+                          <span class="badge-done">Telah Selesai</span>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -707,11 +872,13 @@
     <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
     <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
     <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
 
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
     <script src="js/pages/dashboard7.js"></script>
     <script src="js/pages/patients.js"></script>
-    <script src="js/pages/dashboard.js"></script>
+    <script src="js/pages/dashboard2.js"></script>
+    <script src="js/pages/widget-inline-charts.js"></script>
   </body>
 </html>

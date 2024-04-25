@@ -42,14 +42,14 @@ $(function () {
           breakpoint: 1600,
           options: {
             chart: {
-				width: 175,
+				width: 88,
             }
           }
         },{
           breakpoint: 500,
           options: {
             chart: {
-				width: 200,
+				width: 88,
             }
           }
         }]
