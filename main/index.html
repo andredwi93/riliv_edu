@@ -149,7 +149,7 @@
                   </a>
                   <ul class="treeview-menu">
                     <li>
-                      <a href="#"
+                      <a href="class_list.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
@@ -159,7 +159,7 @@
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="jurusan.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
@@ -169,7 +169,7 @@
                       >
                     </li>
                     <li>
-                      <a href="#"
+                      <a href="teacher_list.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
@@ -180,30 +180,100 @@
                     </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="insight.html">
+                <li class="treeview">
+                  <a href="#">
                     <i>
                       <img
                         src="../assets/icons/custom/insight.svg"
-                        alt="ic-insight"
+                        alt="ic-dashboard"
                       />
                     </i>
-                    <span>Insight Siswa</span>
+                    <span>Analisis Siswa</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </span>
                   </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="insight.html"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Ringkasan Analisis</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Aktivitas Tes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Aktivitas Konseling</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Aktivitas Journey</a
+                      >
+                    </li>
+                  </ul>
                 </li>
-                <li>
+                <li class="treeview">
                   <a href="#">
                     <i>
                       <img
                         src="../assets/icons/custom/test.svg"
-                        alt="ic-test"
+                        alt="ic-dashboard"
                       />
                     </i>
-                    <span>Pemantauan Tes</span>
+                    <span>Tes Untuk Siswa</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </span>
                   </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Pelaksanaan Tes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Metode & Pertanyaan</a
+                      >
+                    </li>
+                  </ul>
                 </li>
                 <li class="treeview">
-                  <a href="reports.html">
+                  <a href="#">
                     <i>
                       <img
                         src="../assets/icons/custom/counseling.svg"
@@ -222,7 +292,7 @@
                             src="../assets/icons/custom/bullet.svg"
                             alt="ic-dashboard"
                           /> </i
-                        >Kalender</a
+                        >Jadwal Konseling</a
                       >
                     </li>
                     <li>
@@ -238,18 +308,18 @@
                   </ul>
                 </li>
                 <li>
-                  <a href="reports.html">
+                  <a href="box_curhat.html">
                     <i>
                       <img
                         src="../assets/icons/custom/report.svg"
                         alt="ic-report"
                       />
                     </i>
-                    <span>Laporan Keseluruhan</span>
+                    <span>Kotak Curhat</span>
                   </a>
                 </li>
                 <li>
-                  <a href="reports.html">
+                  <a href="#">
                     <i>
                       <img
                         src="../assets/icons/custom/setting.svg"
@@ -260,7 +330,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="reports.html">
+                  <a href="support.html">
                     <i>
                       <img
                         src="../assets/icons/custom/help.svg"
@@ -280,7 +350,7 @@
       <div class="content-wrapper">
         <div class="container-full">
           <!-- Main content -->
-          <section class="content">
+          <section class="content mb-5">
             <div class="row">
               <div class="col-xxxl-4 col-xl-4 col-lg-6">
                 <div class="row vitals">
@@ -336,12 +406,17 @@
               </div>
               <div class="col-xxxl-8 col-xl-8 col-lg-6">
                 <div class="chart-section">
-                  <button class="waves-effect waves-light btn btn-success mb-5">
-                    Week
-                  </button>
-                  <button class="waves-effect waves-light btn btn-light mb-5">
-                    Month
-                  </button>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <h2 class="table-title">Grafik Performa Jadwal Konseling</h2>
+                    <div>
+                      <button class="waves-effect waves-light btn btn-success mb-5 me-3">
+                        Minggu
+                      </button>
+                      <button class="waves-effect waves-light btn btn-light mb-5">
+                        Bulan
+                      </button>
+                    </div>
+                  </div>
                   <div id="statistics"></div>
                 </div>
               </div>
@@ -357,34 +432,9 @@
                       class="box-body px-0 d-flex align-items-center justify-content-center"
                       style="gap: 24px"
                     >
-                      <div class="text-center">
-                        <input
-                          class="knob"
-                          data-width="88"
-                          data-height="88"
-                          data-min="-100"
-                          data-fgColor="#F98B06"
-                          data-displayPrevious="true"
-                          value="60"
-                          data-readOnly="true"
-                        />
-                      </div>
+                      <img src="../assets/icons/custom/stress.png" alt="stress" width="88" height="88">
                       <div class="ml-5">
-                        <h4 class="title-card-percent mt-0">Tingkat Stress</h4>
-                        <div class="text-start">
-                          <span
-                            class="badge badge-xl badge-dot me-10"
-                            style="background-color: #36c8e3"
-                          ></span>
-                          Laki-laki 60%
-                        </div>
-                        <div class="text-start">
-                          <span
-                            class="badge badge-xl badge-dot me-10"
-                            style="background-color: #ff9c90"
-                          ></span>
-                          Perempuan 40%
-                        </div>
+                        <h4 class="title-card-percent mt-0">Tingkat Stress</h4>                    
                       </div>
                     </div>
                   </div>
@@ -395,36 +445,11 @@
                       class="box-body px-0 d-flex align-items-center justify-content-center"
                       style="gap: 24px"
                     >
-                      <div class="text-center">
-                        <input
-                          class="knob"
-                          data-width="88"
-                          data-height="88"
-                          data-min="-100"
-                          data-fgColor="#75519E"
-                          data-displayPrevious="true"
-                          value="60"
-                          data-readOnly="true"
-                        />
-                      </div>
+                      <img src="../assets/icons/custom/anxiety.png" alt="anxiety" width="88" height="88">
                       <div class="ml-5">
                         <h4 class="title-card-percent mt-0">
                           Tingkat Kecemasan
-                        </h4>
-                        <div class="text-start">
-                          <span
-                            class="badge badge-xl badge-dot me-10"
-                            style="background-color: #36c8e3"
-                          ></span>
-                          Laki-laki 60%
-                        </div>
-                        <div class="text-start">
-                          <span
-                            class="badge badge-xl badge-dot me-10"
-                            style="background-color: #ff9c90"
-                          ></span>
-                          Perempuan 40%
-                        </div>
+                        </h4>                        
                       </div>
                     </div>
                   </div>
@@ -435,36 +460,11 @@
                       class="box-body px-0 d-flex align-items-center justify-content-center"
                       style="gap: 24px"
                     >
-                      <div class="text-center">
-                        <input
-                          class="knob"
-                          data-width="88"
-                          data-height="88"
-                          data-min="-100"
-                          data-fgColor="#DB6C69"
-                          data-displayPrevious="true"
-                          value="65"
-                          data-readOnly="true"
-                        />
-                      </div>
+                     <img src="../assets/icons/custom/depression.png" alt="depression" width="88" height="88">
                       <div class="ml-5">
                         <h4 class="title-card-percent mt-0">
                           Tingkat Kecemasan
-                        </h4>
-                        <div class="text-start">
-                          <span
-                            class="badge badge-xl badge-dot me-10"
-                            style="background-color: #36c8e3"
-                          ></span>
-                          Laki-laki 65%
-                        </div>
-                        <div class="text-start">
-                          <span
-                            class="badge badge-xl badge-dot me-10"
-                            style="background-color: #ff9c90"
-                          ></span>
-                          Perempuan 35%
-                        </div>
+                        </h4>                       
                       </div>
                     </div>
                   </div>

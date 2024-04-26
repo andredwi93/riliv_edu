@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="icon" href="../images/favicon.ico" />
+
+    <title>Riliv for Education - Dashboard</title>
+
+    <!-- Vendors Style-->
+    <link rel="stylesheet" href="css/vendors_css.css" />
+
+    <!-- Style-->
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/skin_color.css" />
+  </head>
+
+  <body class="hold-transition light-skin sidebar-mini theme-primary fixed">
+    <div class="wrapper">
+      <div id="loader"></div>
+
+      <header class="main-header">
+        <div class="d-flex align-items-center logo-box justify-content-start">
+          <!-- Logo -->
+          <a href="index.html" class="logo">
+            <!-- logo-->
+            <div class="logo-lg">
+              <span class="light-logo"
+                ><img
+                  src="../images/logo/logo-rfe.png"
+                  alt="logo"
+                  style="width: 126px"
+              /></span>
+            </div>
+          </a>
+        </div>
+        <!-- Header Navbar -->
+        <nav class="navbar navbar-static-top">
+          <!-- Sidebar toggle button-->
+          <div class="app-menu">
+            <ul class="header-megamenu nav">
+              <li class="btn-group nav-item">
+                <a href="#" class="waves-effect waves-light nav-link push-btn btn-primary-light" data-toggle="push-menu" role="button">
+                  <i class="icon-Menu"><span class="path1"></span><span class="path2"></span></i>
+                  </a>
+              </li>
+            </ul> 
+          </div>
+
+          <div class="navbar-custom-menu r-side">
+            <ul class="nav navbar-nav">
+              <!-- User Account-->
+              <li class="btn-group nav-item">
+                <a href="#"  class="p-0 nav-link full-screen" style="background-color: transparent;" title="Notif">
+                  <img src="../assets/icons/custom/notif.svg" alt="notif" style="width: 45px; height: 45px;" />
+                  </a>
+              </li>
+              <li class="btn-group nav-item me-4">
+                <a href="#"  class="nav-link p-0 full-screen" style="background-color: transparent;" title="Full Screen">
+                  <i><img src="../assets/icons/custom/fullscreen.svg" alt="notif" style="width: 45px; height: 45px;" /></i>
+                  </a>
+              </li>
+              <!-- <li
+                class="notifications-menu"
+                style="margin-right: 24px"
+              >
+                <a href="#" data-provide="fullscreen" title="Full Screen">
+                  <i>
+                    <img
+                      src="../assets/icons/custom/fullscreen.svg"
+                      alt="fullscreen"
+                    />
+                  </i>
+                </a>
+              </li> -->
+              <!-- Notifications -->
+              <li class="dropdown user user-menu">
+                <a
+                  href="#"
+                  class="waves-effect waves-light dropdown-toggle w-auto l-h-12 bg-transparent p-0 no-shadow"
+                  data-bs-toggle="dropdown"
+                  title="User"
+                >
+                  <div class="d-flex pt-1">
+                    <div class="text-end me-10">
+                      <p class="pt-5 fs-14 mb-0 fw-700 text-primary">
+                        Johen Doe
+                      </p>
+                      <small class="fs-10 mb-0 text-uppercase text-mute"
+                        >Admin</small
+                      >
+                    </div>
+                    <img
+                      src="../images/avatar/avatar-1.png"
+                      class="avatar rounded-10 bg-primary-light h-40 w-40"
+                      alt=""
+                    />
+                  </div>
+                </a>
+                <ul class="dropdown-menu animated flipInX">
+                  <li class="user-body">
+                    <a class="dropdown-item" href="extra_profile.html"
+                      ><i class="ti-user text-muted me-2"></i> Profile</a
+                    >
+                    <a class="dropdown-item" href="../index.html"
+                      ><i class="ti-lock text-muted me-2"></i> Logout</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <aside class="main-sidebar">
+        <!-- sidebar-->
+        <section class="sidebar position-relative">
+          <div class="multinav">
+            <div class="multinav-scroll" style="height: 100%">
+              <!-- sidebar menu-->
+              <ul class="sidebar-menu" data-widget="tree">
+                <li>
+                  <a href="index.html">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/dashboard.svg"
+                        alt="ic-dashboard"
+                      />
+                    </i>
+                    <span>Dashboard</span>
+                  </a>
+                </li>
+                <li class="treeview">
+                  <a href="#">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/school.svg"
+                        alt="ic-dashboard"
+                      />
+                    </i>
+                    <span>Data Sekolah</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="class_list.html"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Daftar Kelas</a
+                      >
+                    </li>
+                    <li>
+                      <a href="jurusan.html"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Daftar Jurusan</a
+                      >
+                    </li>
+                    <li>
+                      <a href="teacher_list.html"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Daftar Guru</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/insight.svg"
+                        alt="ic-dashboard"
+                      />
+                    </i>
+                    <span>Analisis Siswa</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="insight.html"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Ringkasan Analisis</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Aktivitas Tes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Aktivitas Konseling</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Aktivitas Journey</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/test.svg"
+                        alt="ic-dashboard"
+                      />
+                    </i>
+                    <span>Tes Untuk Siswa</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                    </span>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Pelaksanaan Tes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Metode & Pertanyaan</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="treeview">
+                  <a href="#">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/counseling.svg"
+                        alt="ic-counseling"
+                      />
+                    </i>
+                    <span>Konseling</span>
+                    <span class="pull-right-container">
+                      <i class="fa fa-angle-right pull-right"></i>
+                  </a>
+                  <ul class="treeview-menu">
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Jadwal Konseling</a
+                      >
+                    </li>
+                    <li>
+                      <a href="#"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Ruang Konseling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="box_curhat.html">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/report.svg"
+                        alt="ic-report"
+                      />
+                    </i>
+                    <span>Kotak Curhat</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/setting.svg"
+                        alt="ic-setting"
+                      />
+                    </i>
+                    <span>Pengaturan</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="support.html">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/help.svg"
+                        alt="ic-help"
+                      />
+                    </i>
+                    <span>Bantuan</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </aside>
+
+      <!-- Content Wrapper. Contains page content -->
+      <div class="content-wrapper">
+        <div class="container-full">
+          <!-- Main content -->
+          <section class="content mb-4">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h1 class="main-title m-0">Daftar Kotak Curhat</h1>
+                <p class="main-desc">Akses dan beri tindakan semua pengaduan dari siswa di sini.</p>
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-md-9">
+                <div class="mb-3">
+                  <input type="search" class="form-control" id="search" placeholder="Cari nama siswa di sini...">
+                </div>
+              </div>
+              <div class="col col-md-3">
+                <div class="row">
+                  <div class="col">
+                    <input
+                      type="date"
+                       class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Tanggal Pengaduan"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead style="background-color: rgba(240, 245, 249, 0.5);">
+                  <tr style="font-size: 12px; color: #ABC3D2;">
+                    <th>ID SISWA</th>
+                    <th>TANGGAL PENGADUAN</th>
+                    <th>NAMA LENGKAP</th>
+                    <th>NO. WHATSAPP</th>
+                    <th style="width: 230px;">PESAN</th>
+                    <th style="width: 200px;">AKSI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="font-size: 13px; color: #5887A4;">
+                    <td>#p245879</td>
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>Aaliyah Clark</td>
+                    <td>089212129131</td>
+                    <td>Lorem ipsum dolor sit amet consectetur. Id scelerisque urna erat amet tempor imperdiet pretium nisl magnis.</td>
+                    <td class="py-4">
+                      <button type="button" class="primary-custom-btn" style="border: none;" data-bs-toggle="modal" data-bs-target="#modal-center">
+                        Beri Tindakan
+                      </button>
+                    </td>
+                  </tr>
+                  <tr style="font-size: 13px; color: #5887A4;">
+                    <td>#p245879</td>
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>Aaliyah Clark</td>
+                    <td>089212129131</td>
+                    <td>Lorem ipsum dolor sit amet consectetur. Id scelerisque urna erat amet tempor imperdiet pretium nisl magnis.</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque urna erat amet 
+                    </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <!-- /.content -->
+        </div>
+      </div>
+      <!-- /.content-wrapper -->
+
+      <div class="modal center-modal fade" id="modal-center" tabindex="-1">
+        <div class="modal-dialog">
+        <div class="modal-content" style="border-radius: 16px;">          
+          <div class="modal-body">            
+            <h5 class="title-progress mt-3" style="font-weight: 500 !important;">Berikan Tindakan</h5>
+            <p style="font-size: 12px; color: #5887A4;">Isi tindakan yang akan Anda lakukan di sini.</p>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div>
+                  <label for="date" class="form-label label-curhat">Tanggal Lapor</label>
+                  <input type="date" class="form-control" id="date" value="2024-03-06" style="background-color: #F0F5F9;" readonly>
+                </div>                
+              </div>
+              <div class="col-md-6">
+                <div>
+                  <label for="name" class="form-label label-curhat">Nama Siswa</label>
+                  <input type="text" class="form-control" id="name" value="Rival Syah" style="background-color: #F0F5F9;" readonly>
+                </div>
+              </div>
+            </div>
+            <div class="mt-2">
+              <label for="message" class="form-label label-curhat">Pesan yang Disampaikan</label>
+              <textarea class="form-control" name="message" id="message" cols="30" rows="5" style="background-color: #F0F5F9;" readonly>Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea>
+            </div>
+            <div class="mt-2">
+              <label for="action" class="form-label label-curhat">Tindakan yang Dilakukan</label>
+              <textarea class="form-control" name="action" id="action" cols="30" rows="8" placeholder="Tulis sesuat"></textarea>
+            </div>
+            <div class="d-flex" style="gap: 16px; margin-top: 32px;">
+              <button data-bs-dismiss="modal" class="outline-btn" style="flex: 1; background-color: #fff;">Batal</button>
+              <button data-bs-dismiss="modal" class="secondary-btn" style="flex: 1">Berikan Tindakan</button>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+
+      <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
+      <div class="control-sidebar-bg"></div>
+    </div>
+    <!-- ./wrapper -->
+
+    <!-- Sidebar -->
+
+    <!-- Page Content overlay -->
+
+    <!-- Vendor JS -->
+    <script src="js/vendors.min.js"></script>
+    <script src="js/pages/chat-popup.js"></script>
+    <script src="../assets/icons/feather-icons/feather.min.js"></script>
+
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+    <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+
+    <!-- Doclinic App -->
+    <script src="js/template.js"></script>
+    <script src="js/pages/dashboard7.js"></script>
+    <script src="js/pages/patients.js"></script>
+    <script src="js/pages/dashboard2.js"></script>
+    <script src="js/pages/widget-inline-charts.js"></script>
+  </body>
+</html>

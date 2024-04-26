@@ -667,7 +667,7 @@ Theme Primary Color
 }
 
 .theme-primary.light-skin .sidebar-menu > li.active.treeview > a {
-  background-color: transparent;
+  background-color: white;
   color: #063D5B !important;
   font-weight: 700;
 }
@@ -756,10 +756,11 @@ Theme Primary Color
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.active {
   background-color: rgba(6, 61, 91, 0);
-  color: #063d5b;
+  color: #75519E;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.active a {
-  color: #063d5b;
+  color: #75519E;
+  font-weight: 700;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.active a > i {
   color: #063d5b;

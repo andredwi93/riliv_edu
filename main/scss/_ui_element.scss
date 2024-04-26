@@ -5529,6 +5529,80 @@ button {
   color: #5887a4;
 }
 
+.main-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+  text-align: left;
+  color: #044b77;
+}
+
+.main-desc {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+  color: #5887a4;
+}
+
+.badge-active-status {
+  border: 1px solid #ccecdf;
+  background-color: #e7f8f1;
+  padding: 4px 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #00a05d;
+}
+
+.badge-inactive-status {
+  border: 1px solid #fcdadb;
+  background-color: #fcf2f3;
+  padding: 4px 18px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #d82b47;
+}
+
+.primary-custom-btn {
+  background-color: #36c8e3;
+  border-radius: 100px;
+  padding: 12px 24px;
+  color: white;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.upload-btn {
+  background-color: #36c8e3;
+  border-radius: 100px;
+  padding: 7px 24px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: white;
+  &:hover {
+    color: white !important;
+  }
+}
+
+.box-upload {
+  border: 1px solid #36c8e3;
+  padding: 16px 24px;
+  border-radius: 11px;
+}
+
 .title-card-percent {
   font-size: 16px;
   font-weight: 500;
@@ -5536,6 +5610,7 @@ button {
   text-align: left;
   color: #044b77;
 }
+
 .table-title {
   font-weight: 500;
   color: #044b77;
@@ -5639,4 +5714,63 @@ button {
   text-align: left;
   color: #044b77;
   margin: 0;
+}
+
+.outline-purple {
+  border: 1px solid #75519e;
+  color: #75519e;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 24px;
+}
+
+.secondary-purple {
+  color: white;
+  background-color: #75519e;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 24px;
+  border: none;
+}
+
+.outline-btn {
+  border: 1px solid #ff8000;
+  color: #ff8000;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  padding: 10px 24px;
+  &:hover {
+    color: #ff8000 !important;
+  }
+}
+
+.form-select {
+  font-size: 13px !important;
+  font-weight: 500 !important;
+  color: #5887a4;
+}
+
+.form-control {
+  font-size: 13px !important;
+  color: #044b77;
+  &::placeholder {
+    color: #5887a4;
+  }
+}
+
+.label-curhat {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: left;
+  color: #044b77;
 }

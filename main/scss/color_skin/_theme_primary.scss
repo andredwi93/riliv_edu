@@ -114,7 +114,7 @@ Theme Primary Color
             >li{
                 &.active.treeview {
                     >a{
-                        background-color: transparent;
+                        background-color: white;
                         color: $theme-primary-primary !important;
                         font-weight: 700;
                         > i{
@@ -257,9 +257,10 @@ Theme Primary Color
                     .treeview-menu{
                         li.active{
                             background-color: rgba($theme-primary-primary, 0.0);
-                            color: rgba($theme-primary-primary, 1);
+                            color: #75519E;
                             a{
-                                color: rgba($theme-primary-primary, 1);                                
+                                color: #75519E;
+                                font-weight: 700;                               
                                 > i{
                                    color: rgba($theme-primary-primary, 1) ;
                                    background-color: rgba($theme-primary-primary, 0) ;
