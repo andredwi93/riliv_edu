@@ -200,11 +200,11 @@ $(function() {
 
                 // Add legend
                 legend: {
-                    data: [  'Data1', 'Data2', 'Data3', 'Data4', 'Data5', 'Data7']
+                    data: [  'Rendah', 'Menengah', 'Tinggi']
                 },
 
                 // Add custom colors
-                color: ['#689f38', '#38649f', '#389f99', '#ff8f00', '#ee1044'],
+                color: ['#FF8000', '#338BCB', '#38B9A0'],
 
                 // Enable drag recalculate
                 calculable: true,
@@ -212,7 +212,7 @@ $(function() {
                 // Horizontal axis
                 xAxis: [{
                     type: 'category',
-                    data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+                    data: ['Perilaku', 'Hiperaktivitas', 'Emosional', 'Teman Sebaya', 'Pro-Sosial']
                 }],
 
                 // Vertical axis
@@ -224,15 +224,15 @@ $(function() {
                 series : [
                     
                     {
-                        name:'Data1',
+                        name:'Rendah',
                         type:'bar',
                         stack: 'data1',
-                        data:[178, 241, 210, 147, 299, 358, 487]
+                        data:[178, 241, 210, 147, 299]
                     },
                     {
-                        name:'Data2',
+                        name:'Menengah',
                         type:'bar',
-                        data:[875, 845, 985, 1254, 1425, 1235, 1425],
+                        data:[875, 845, 985, 1254, 1425],
                         markLine : {
                             itemStyle:{
                                 normal:{
@@ -247,30 +247,12 @@ $(function() {
                         }
                     },
                     {
-                        name:'Data3',
+                        name:'Tinggi',
                         type:'bar',
                         barWidth : 12,
                         stack: 'data',
-                        data:[654, 758, 754, 854, 1245, 1100, 1140]
+                        data:[654, 758, 754, 854, 1245]
                     },
-                    {
-                        name:'Data4',
-                        type:'bar',
-                        stack: 'data',
-                        data:[104, 134, 125, 158, 245, 236, 278]
-                    },
-                    {
-                        name:'Data5',
-                        type:'bar',
-                        stack: 'data',
-                        data:[54, 123, 147, 85, 165, 158, 123]
-                    },
-                    {
-                        name:'Data6',
-                        type:'bar',
-                        stack: 'data',
-                        data:[21, 84, 79, 86, 135, 158, 210]
-                    }
                 ]
                 // Add series
                 

@@ -2464,13 +2464,13 @@ Theme Primary Color
   color: #063D5B;
 }
 .theme-primary .nav-pills > li > a.active {
-  border-top-color: #063D5B;
-  background-color: #063D5B !important;
+  border-bottom-color: #02BBDD;
+  background-color: #02BBDD !important;
   color: #ffffff;
 }
 .theme-primary .nav-pills > li > a.active:hover, .theme-primary .nav-pills > li > a.active:focus {
-  border-top-color: #063D5B;
-  background-color: #063D5B !important;
+  border-bottom-color: #02BBDD;
+  background-color: #02BBDD !important;
   color: #ffffff;
 }
 .theme-primary .mailbox-nav .nav-pills > li > a:hover, .theme-primary .mailbox-nav .nav-pills > li > a:focus {

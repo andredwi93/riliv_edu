@@ -2740,12 +2740,12 @@ $box-bod-s: solid;
         >li{
             >a{ 
                 &.active{
-                       border-top-color: $theme-primary-primary;
-	                   background-color: $theme-primary-primary !important;
+                       border-bottom-color: #02BBDD;
+	                   background-color: #02BBDD !important;
                        color: $white;
                     @include hover-focus-state{
-                       border-top-color: $theme-primary-primary;
-	                   background-color: $theme-primary-primary !important;
+                       border-bottom-color: #02BBDD;
+	                   background-color: #02BBDD !important;
                        color: $white;
                     }     
                 }

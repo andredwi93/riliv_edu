@@ -5774,3 +5774,39 @@ button {
   text-align: left;
   color: #044b77;
 }
+
+.red-score {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #D82B47;
+  background-color: #FCF2F3;
+  border: 1px solid #FCDADB;
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.green-score {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #00A05D;
+  background-color: #E7F8F1;
+  border: 1px solid #CCECDF;
+  padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.yellow-score {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #F3BD2E;
+  background-color: #FCF8EE;
+  border: 1px solid #FFF2CC;
+  padding: 8px 16px;
+  border-radius: 100px;
+}

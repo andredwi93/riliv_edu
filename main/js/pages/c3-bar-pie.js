@@ -63,19 +63,19 @@ $(function () {
 	
 	var o = c3.generate({
         bindto: "#donut-chart",
-        color: { pattern: ["#673ab7", "#4974e0", "#3db76b"] },
+        color: { pattern: ["#38B9A0", "#338BCB", "#F3BD2E"] },
         data: {
             columns: [
-                ['data1', 200],
-            	['data2', 100],
-                ['data3', 50]
+                ['Perempuan', 200],
+            	['Laki-laki', 100],
+                ['Tidak Menyebutkan', 50]
             ],
             type: "donut",
             onclick: function(o, n) { console.log("onclick", o, n) },
             onmouseover: function(o, n) { console.log("onmouseover", o, n) },
             onmouseout: function(o, n) { console.log("onmouseout", o, n) }
         },
-        donut: { title: "Total Data" }
+        donut: { title: "" }
     });
     setTimeout(function() {
             o.load({
@@ -150,31 +150,74 @@ $(function () {
 	
 	
 	// Callback that creates and populates a data table, instantiates the stacked column chart, passes in the data and draws it.
-    var stackedColumnChart = c3.generate({
-        bindto: '#stacked-column',
-        size: { height: 400 },
-        color: {
-            pattern: ['#673ab7', '#4974e0', '#3db76b', '#ec407a']
-        },
+    var stackedbarcolumnChart = echarts.init(document.getElementById('stacked-column'));
+        var option = {
+            
+             // Setup grid
+                grid: {
+                    x: 40,
+                    x2: 40,
+                    y: 45,
+                    y2: 25
+                },
 
-        // Create the data table.
-        data: {
-            columns: [
-                ['data1', -30, 200, 200, 400, -150, 250],
-				['data2', 130, 100, -100, 200, -150, 50],
-				['data3', -230, 200, 200, -300, 250, 250]
-            ],
-            type: 'bar',
-            groups: [
-                ["data1", "data2"]
-            ]
-        },
-        grid: {
-            y: {
-                show: true
-            }
-        },
-    });
+                // Add tooltip
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // Axis indicator axis trigger effective
+                        type : 'shadow'        // The default is a straight line, optionally: 'line' | 'shadow'
+                    }
+                },
+
+                // Add legend
+                legend: {
+                    data: [  'Rendah', 'Menengah', 'Tinggi']
+                },
+
+                // Add custom colors
+                color: ['#FF8000', '#338BCB', '#38B9A0'],
+
+                // Enable drag recalculate
+                calculable: true,
+
+                // Horizontal axis
+                xAxis: [{
+                    type: 'category',
+                    data: ['Perilaku', 'Hiperaktivitas', 'Emosional', 'Teman Sebaya', 'Pro-Sosial']
+                }],
+
+                // Vertical axis
+                yAxis: [{
+                    type: 'value',
+                }],
+
+                // Add series
+                series : [
+                    
+                    {
+                        name:'Rendah',
+                        type:'bar',
+                        stack: 'data1',
+                        data:[178, 241, 210, 147, 299]
+                    },
+                    {
+                        name:'Menengah',
+                        type:'bar',
+                        data:[875, 845, 985, 1254, 1425],
+                        
+                    },
+                    {
+                        name:'Tinggi',
+                        type:'bar',
+                        barWidth : 12,
+                        stack: 'data',
+                        data:[654, 758, 754, 854, 1245]
+                    },
+                ]
+                // Add series
+                
+        };
+        stackedbarcolumnChart.setOption(option);
 
     // Instantiate and draw our chart, passing in some options.
     setTimeout(function() {
