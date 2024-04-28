@@ -47,16 +47,16 @@ $(function () {
             data3: 205
         }],
         xkey: 'period',
-        ykeys: ['data1', 'data2', 'data3'],
-        labels: ['Data 1', 'Data 2', 'Data 3'],
+        ykeys: ['data1'],
+        labels: ['Data 1'],
         pointSize: 3,
         fillOpacity: 0,
-        pointStrokeColors:['#0bb2d4', '#17b3a3', '#3e8ef7'],
+        pointStrokeColors:['#165BAA'],
         behaveLikeLine: true,
         gridLineColor: '#e0e0e0',
         lineWidth: 3,
         hideHover: 'auto',
-        lineColors: ['#0bb2d4', '#17b3a3', '#3e8ef7'],
+        lineColors: ['#165BAA'],
         resize: true
         
     });

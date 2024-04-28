@@ -2739,10 +2739,12 @@ $box-bod-s: solid;
     .nav-pills{
         >li{
             >a{ 
+                padding: 10px 32px;
                 &.active{
                        border-bottom-color: #02BBDD;
 	                   background-color: #02BBDD !important;
                        color: $white;
+                       border-radius: 100px;
                     @include hover-focus-state{
                        border-bottom-color: #02BBDD;
 	                   background-color: #02BBDD !important;
@@ -3465,12 +3467,12 @@ $box-bod-s: solid;
                 >ul{
                     >li{
                     &.current{
-                        border: 2px solid $theme-primary-primary;
-                        background-color: $theme-primary-primary;
+                        border: 2px solid #75519E;
+                        background-color: #75519E;
                     } 
                      &.done{
-                        border-color: darken($theme-primary-primary, 10%);
-                        background-color: darken($theme-primary-primary, 10%);
+                        border-color: #E1D8FF;
+                        background-color: #E1D8FF;
                     } 
                     }
                 }
@@ -3479,7 +3481,7 @@ $box-bod-s: solid;
                 >ul{
                     >li{
                         >a{
-                            background-color: $theme-primary-primary;
+                            background-color: #FF8000;
                         }
                     }
                 }

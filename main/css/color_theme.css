@@ -2463,10 +2463,14 @@ Theme Primary Color
 .theme-primary .nav > li > a:hover, .theme-primary .nav > li > a:active, .theme-primary .nav > li > a:focus {
   color: #063D5B;
 }
+.theme-primary .nav-pills > li > a {
+  padding: 10px 32px;
+}
 .theme-primary .nav-pills > li > a.active {
   border-bottom-color: #02BBDD;
   background-color: #02BBDD !important;
   color: #ffffff;
+  border-radius: 100px;
 }
 .theme-primary .nav-pills > li > a.active:hover, .theme-primary .nav-pills > li > a.active:focus {
   border-bottom-color: #02BBDD;
@@ -2840,15 +2844,15 @@ Theme Primary Color
 
 /*---wizard---*/
 .theme-primary .wizard-content .wizard > .steps > ul > li.current {
-  border: 2px solid #063D5B;
-  background-color: #063D5B;
+  border: 2px solid #75519E;
+  background-color: #75519E;
 }
 .theme-primary .wizard-content .wizard > .steps > ul > li.done {
-  border-color: #031d2b;
-  background-color: #031d2b;
+  border-color: #E1D8FF;
+  background-color: #E1D8FF;
 }
 .theme-primary .wizard-content .wizard > .actions > ul > li > a {
-  background-color: #063D5B;
+  background-color: #FF8000;
 }
 .theme-primary .wizard-content .wizard.wizard-circle > .steps > ul > li:after {
   background-color: #063D5B;

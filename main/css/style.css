@@ -24511,10 +24511,10 @@ body .main-header .navbar .nav > li.search-box > a:hover, body .main-header .nav
   color: #ffffff;
 }
 .wizard-content .wizard > .steps > ul > li.done a {
-  color: #ffffff;
+  color: #75519E;
 }
 .wizard-content .wizard > .steps > ul > li.done a:hover, .wizard-content .wizard > .steps > ul > li.done a:focus {
-  color: #ffffff;
+  color: #75519E;
 }
 .wizard-content .wizard > .steps > ul > li.error {
   border-color: #ee3158;
@@ -36231,11 +36231,10 @@ button.btn.dropdown-toggle:after {
   line-height: 20px;
   text-align: center;
   color: white;
-  width: 106px;
   background: #ff8000;
   border-radius: 100px;
   border: none;
-  padding: 8px 0;
+  padding: 10px 24px;
 }
 
 .card-condition {
@@ -36351,9 +36350,9 @@ button.btn.dropdown-toggle:after {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  color: #D82B47;
-  background-color: #FCF2F3;
-  border: 1px solid #FCDADB;
+  color: #d82b47;
+  background-color: #fcf2f3;
+  border: 1px solid #fcdadb;
   padding: 8px 16px;
   border-radius: 100px;
 }
@@ -36363,9 +36362,9 @@ button.btn.dropdown-toggle:after {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  color: #00A05D;
-  background-color: #E7F8F1;
-  border: 1px solid #CCECDF;
+  color: #00a05d;
+  background-color: #e7f8f1;
+  border: 1px solid #ccecdf;
   padding: 8px 16px;
   border-radius: 100px;
 }
@@ -36375,10 +36374,25 @@ button.btn.dropdown-toggle:after {
   font-weight: 500;
   line-height: 18px;
   text-align: center;
-  color: #F3BD2E;
-  background-color: #FCF8EE;
-  border: 1px solid #FFF2CC;
+  color: #f3bd2e;
+  background-color: #fcf8ee;
+  border: 1px solid #fff2cc;
   padding: 8px 16px;
+  border-radius: 100px;
+}
+
+.bullet-blue {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ccf1f8;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  text-align: center;
+  color: #02BBDD;
   border-radius: 100px;
 }
 

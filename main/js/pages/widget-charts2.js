@@ -227,26 +227,26 @@ $( document ).ready(function() {
 	}
 	
 	// Bar chart
-	new Chart(document.getElementById("bar-chart1"), {
-		type: 'bar',
-		data: {
-		  labels: ["January", "February", "March", "April", "May"],
-		  datasets: [
-			{
-			  label: "Dataset",
-			  backgroundColor: ["#689f38", "#38649f","#389f99","#ee1044","#ff8f00"],
-			  data: [8545,6589,5894,4985,1548]
-			}
-		  ]
-		},
-		options: {
-		  legend: { display: false },
-		  title: {
-			display: true,
-			text: 'My dataset'
-		  }
-		}
-	});
+	// new Chart(document.getElementById("bar-chart1"), {
+	// 	type: 'bar',
+	// 	data: {
+	// 	  labels: ["January", "February", "March", "April", "May"],
+	// 	  datasets: [
+	// 		{
+	// 		  label: "Dataset",
+	// 		  backgroundColor: ["#689f38", "#38649f","#389f99","#ee1044","#ff8f00"],
+	// 		  data: [8545,6589,5894,4985,1548]
+	// 		}
+	// 	  ]
+	// 	},
+	// 	options: {
+	// 	  legend: { display: false },
+	// 	  title: {
+	// 		display: true,
+	// 		text: 'My dataset'
+	// 	  }
+	// 	}
+	// });
 	
 	if( $('#bar-chart2').length > 0 ){
 		var ctx2 = document.getElementById("bar-chart2").getContext("2d");
@@ -331,26 +331,26 @@ $( document ).ready(function() {
 
 
 	// Horizental Bar Chart
-	new Chart(document.getElementById("bar-chart-horizontal1"), {
-		type: 'horizontalBar',
-		data: {
-		  labels: ["January", "February", "March", "April", "May"],
-		  datasets: [
-			{
-			  label: "Dataset",
-			  backgroundColor: ["#689f38", "#38649f","#389f99","#ee1044","#ff8f00"],
-			  data: [8545,6589,5894,4985,1548]
-			}
-		  ]
-		},
-		options: {
-		  legend: { display: false },
-		  title: {
-			display: true,
-			text: 'My dataset'
-		  }
-		}
-	});
+	// new Chart(document.getElementById("bar-chart-horizontal1"), {
+	// 	type: 'horizontalBar',
+	// 	data: {
+	// 	  labels: ["January", "February", "March", "April", "May"],
+	// 	  datasets: [
+	// 		{
+	// 		  label: "Dataset",
+	// 		  backgroundColor: ["#689f38", "#38649f","#389f99","#ee1044","#ff8f00"],
+	// 		  data: [8545,6589,5894,4985,1548]
+	// 		}
+	// 	  ]
+	// 	},
+	// 	options: {
+	// 	  legend: { display: false },
+	// 	  title: {
+	// 		display: true,
+	// 		text: 'My dataset'
+	// 	  }
+	// 	}
+	// });
 	
 	if( $('#bar-chart-horizontal2').length > 0 ){
 		var ctx2 = document.getElementById("bar-chart-horizontal2").getContext("2d");
@@ -426,25 +426,25 @@ $( document ).ready(function() {
 	}
 
 	//Polar Chart
-	new Chart(document.getElementById("polar-chart1"), {
-		type: 'polarArea',
-		data: {
-		  labels: ["January", "February", "March", "April"],
-		  datasets: [
-			{
-			  label: "Dataset",
-			  backgroundColor: ["#689f38", "#38649f","#389f99","#ee1044","#ff8f00"],
-			  data: [2584,5698,5987,3485]
-			}
-		  ]
-		},
-		options: {
-		  title: {
-			display: true,
-			text: 'Mt Dataset'
-		  }
-		}
-	});
+	// new Chart(document.getElementById("polar-chart1"), {
+	// 	type: 'polarArea',
+	// 	data: {
+	// 	  labels: ["January", "February", "March", "April"],
+	// 	  datasets: [
+	// 		{
+	// 		  label: "Dataset",
+	// 		  backgroundColor: ["#689f38", "#38649f","#389f99","#ee1044","#ff8f00"],
+	// 		  data: [2584,5698,5987,3485]
+	// 		}
+	// 	  ]
+	// 	},
+	// 	options: {
+	// 	  title: {
+	// 		display: true,
+	// 		text: 'Mt Dataset'
+	// 	  }
+	// 	}
+	// });
 
 	if( $('#polar-chart2').length > 0 ){
 		var ctx4 = document.getElementById("polar-chart2").getContext("2d");
@@ -521,38 +521,38 @@ $( document ).ready(function() {
 	}
 
 	//Radar chart
-	new Chart(document.getElementById("radar-chart1"), {
-		type: 'radar',
-		data: {
-		  labels: ["January", "February", "March", "April", "May"],
-		  datasets: [
-			{
-			  label: "250",
-			  fill: true,
-			  backgroundColor: "rgba(179,181,198,0.2)",
-			  borderColor: "rgba(179,181,198,1)",
-			  pointBorderColor: "#fff",
-			  pointBackgroundColor: "rgba(179,181,198,1)",
-			  data: [8.77,55.61,21.69,6.62,6.82]
-			}, {
-			  label: "4050",
-			  fill: true,
-			  backgroundColor: "rgba(239, 72, 62, 0.2)",
-			  borderColor: "rgba(239, 72, 62, 1)",
-			  pointBorderColor: "#fff",
-			  pointBackgroundColor: "#ff4c52",
-			  pointBorderColor: "#fff",
-			  data: [25.48,54.16,7.61,8.06,4.45]
-			}
-		  ]
-		},
-		options: {
-		  title: {
-			display: true,
-			text: 'My dataset'
-		  }
-		}
-	});
+	// new Chart(document.getElementById("radar-chart1"), {
+	// 	type: 'radar',
+	// 	data: {
+	// 	  labels: ["January", "February", "March", "April", "May"],
+	// 	  datasets: [
+	// 		{
+	// 		  label: "250",
+	// 		  fill: true,
+	// 		  backgroundColor: "rgba(179,181,198,0.2)",
+	// 		  borderColor: "rgba(179,181,198,1)",
+	// 		  pointBorderColor: "#fff",
+	// 		  pointBackgroundColor: "rgba(179,181,198,1)",
+	// 		  data: [8.77,55.61,21.69,6.62,6.82]
+	// 		}, {
+	// 		  label: "4050",
+	// 		  fill: true,
+	// 		  backgroundColor: "rgba(239, 72, 62, 0.2)",
+	// 		  borderColor: "rgba(239, 72, 62, 1)",
+	// 		  pointBorderColor: "#fff",
+	// 		  pointBackgroundColor: "#ff4c52",
+	// 		  pointBorderColor: "#fff",
+	// 		  data: [25.48,54.16,7.61,8.06,4.45]
+	// 		}
+	// 	  ]
+	// 	},
+	// 	options: {
+	// 	  title: {
+	// 		display: true,
+	// 		text: 'My dataset'
+	// 	  }
+	// 	}
+	// });
 
 	if( $('#radar-chart2').length > 0 ){
 		var ctx3 = document.getElementById("radar-chart2").getContext("2d");
@@ -625,68 +625,59 @@ $( document ).ready(function() {
 	}
 	//Line Chart
 	
-	new Chart(document.getElementById("line-chart1"), {
-	  type: 'line',
-	  data: {
-		labels: [4500,3500,3200,3050,2700,2450,2200,1750,1499,2050],
-		datasets: [{ 
-			data: [86,114,106,106,107,111,133,221,783,2478],
-			label: "January",
-			borderColor: "#689f38",
-			fill: false
-		  }, { 
-			data: [282,350,411,502,635,809,947,1402,3700,5267],
-			label: "February",
-			borderColor: "#38649f",
-			fill: false
-		  }, { 
-			data: [168,170,178,190,203,276,408,547,675,734],
-			label: "March",
-			borderColor: "#389f99",
-			fill: false
-		  }, { 
-			data: [40,20,10,16,24,38,74,167,508,784],
-			label: "April",
-			borderColor: "#ee1044",
-			fill: false
-		  }, { 
-			data: [6,3,2,2,7,26,82,172,312,433],
-			label: "May",
-			borderColor: "#ff8f00",
-			fill: false
-		  }
-		]
-	  },
-	  options: {
-		title: {
-		  display: true,
-		  text: 'My Dateset'
-		}
-	  }
-	});
+	// new Chart(document.getElementById("line-chart1"), {
+	//   type: 'line',
+	//   data: {
+	// 	labels: [4500,3500,3200,3050,2700,2450,2200,1750,1499,2050],
+	// 	datasets: [{ 
+	// 		data: [86,114,106,106,107,111,133,221,783,2478],
+	// 		label: "January",
+	// 		borderColor: "#689f38",
+	// 		fill: false
+	// 	  }, { 
+	// 		data: [282,350,411,502,635,809,947,1402,3700,5267],
+	// 		label: "February",
+	// 		borderColor: "#38649f",
+	// 		fill: false
+	// 	  }, { 
+	// 		data: [168,170,178,190,203,276,408,547,675,734],
+	// 		label: "March",
+	// 		borderColor: "#389f99",
+	// 		fill: false
+	// 	  }, { 
+	// 		data: [40,20,10,16,24,38,74,167,508,784],
+	// 		label: "April",
+	// 		borderColor: "#ee1044",
+	// 		fill: false
+	// 	  }, { 
+	// 		data: [6,3,2,2,7,26,82,172,312,433],
+	// 		label: "May",
+	// 		borderColor: "#ff8f00",
+	// 		fill: false
+	// 	  }
+	// 	]
+	//   },
+	//   options: {
+	// 	title: {
+	// 	  display: true,
+	// 	  text: 'My Dateset'
+	// 	}
+	//   }
+	// });
 	
 	if( $('#line-chart2').length > 0 ){
-		var ctx1 = document.getElementById("line-chart2").getContext("2d");
+		var ctx1 = document.getElementById("line-chart2");
 		var data1 = {
 			labels: ["January", "February", "March", "April", "May", "June", "July"],
 			datasets: [
 			{
-				label: "fir",
-				backgroundColor: "#ff8f00",
-				borderColor: "#ff8f00",
-				pointBorderColor: "#ff8f00",
-				pointHighlightStroke: "#ff8f00",
+				label: "",
+				backgroundColor: "#fff",
+				borderColor: "#165BAA",
+				pointBorderColor: "#165BAA",
+				pointHighlightStroke: "#165BAA",
 				data: [0, 59, 40, 75, 50, 45, 80]
 			},
-			{
-				label: "sec",
-				backgroundColor: "#ee1044",
-				borderColor: "#ee1044",
-				pointBorderColor: "#ee1044",
-				pointBackgroundColor: "#ee1044",
-				data: [48, 88, 50, 58, 34, 67, 65],
-			}
-			
 		]
 		};
 		

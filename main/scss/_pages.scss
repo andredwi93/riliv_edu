@@ -636,9 +636,9 @@
                 &.done{
                     color: $white;
                     a{
-                       color: $white;
+                       color: #75519E;
                             @include hover-focus-state{
-                                color: $white;
+                                color: #75519E;
                             }
                     }
                 }

@@ -272,6 +272,7 @@
                     <span>Konseling</span>
                     <span class="pull-right-container">
                       <i class="fa fa-angle-right pull-right"></i>
+                    </span>
                   </a>
                   <ul class="treeview-menu">
                     <li>
@@ -430,13 +431,18 @@
             <div class="row mt-4">
               <div class="col-12">
                 <h1 class="table-title">Ringkasan Analisis Siswa</h1>
-                <p class="table-desc">
+                <p class="table-desc m-0">
                   Analisis semua kondisi siswa secara detail di sini.
                 </p>
                 <div class="row mt-4">
                   <div class="col col-md-6">
                     <div class="mb-3">
-                      <input type="search" class="form-control" id="search" placeholder="Cari nama kelas di sini...">
+                      <input
+                        type="search"
+                        class="form-control"
+                        id="search"
+                        placeholder="Cari nama kelas di sini..."
+                      />
                     </div>
                   </div>
                   <div class="col col-md-6">
@@ -470,8 +476,8 @@
                 </div>
                 <div class="table-responsive">
                   <table class="table">
-                    <thead style="background-color: rgba(240, 245, 249, 0.5);">
-                      <tr style="font-size: 12px; color: #ABC3D2;">
+                    <thead style="background-color: rgba(240, 245, 249, 0.5)">
+                      <tr style="font-size: 12px; color: #abc3d2">
                         <th>NOMOR INDUK SISWA</th>
                         <th>NAMA LENGKAP</th>
                         <th>KELAS</th>
@@ -481,7 +487,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr style="font-size: 13px; color: #5887A4;">
+                      <tr style="font-size: 13px; color: #5887a4">
                         <td>#p245879</td>
                         <td>Rival Syah</td>
                         <td>XII MIPA 1</td>
@@ -489,19 +495,25 @@
                         <td>rivalsyah@gmail.com</td>
                         <td class="py-4">
                           <a href="detail_siswa.html">
-                            <img src="/assets/icons/custom/ic-detail.svg" alt="ic-detail">
+                            <img
+                              src="/assets/icons/custom/ic-detail.svg"
+                              alt="ic-detail"
+                            />
                           </a>
                         </td>
                       </tr>
-                      <tr style="font-size: 13px; color: #5887A4;">
+                      <tr style="font-size: 13px; color: #5887a4">
                         <td>#p245879</td>
                         <td>Budi Sudarsono</td>
                         <td>XII MIPA 1</td>
                         <td>2023</td>
                         <td>budi@gmail.com</td>
                         <td class="py-4">
-                          <a href="detail_siswa.html">
-                            <img src="/assets/icons/custom/ic-detail.svg" alt="ic-detail">
+                          <a href="detail_siswa_2.html">
+                            <img
+                              src="/assets/icons/custom/ic-detail.svg"
+                              alt="ic-detail"
+                            />
                           </a>
                         </td>
                       </tr>
@@ -512,19 +524,43 @@
             </div>
             <div class="row mt-3">
               <div class="col col-md-4">
-                <div style="border: 1px solid #E2ECF4; border-radius: 12px; padding: 24px;">
+                <div
+                  style="
+                    border: 1px solid #e2ecf4;
+                    border-radius: 12px;
+                    padding: 24px;
+                  "
+                >
                   <h2 class="table-title">Gender</h2>
                   <div id="donut-chart"></div>
                 </div>
               </div>
               <div class="col col-md-8">
-                <div class="analytics-info" style="border: 1px solid #E2ECF4; border-radius: 12px; padding: 24px;">
-                  <h4 class="table-title">Presentase Masalah yang Memicu Siswa Setiap Tahun</h4>
-                  <p class="m-0" style="font-size: 13px; line-height: 20px; color: #5887A4;">Tahun 2010 - 2018</p>
-                  <div class="mt-2" id="stacked-column" style="height: 290px;"></div>
+                <div
+                  class="analytics-info"
+                  style="
+                    border: 1px solid #e2ecf4;
+                    border-radius: 12px;
+                    padding: 24px;
+                  "
+                >
+                  <h4 class="table-title">
+                    Presentase Masalah yang Memicu Siswa Setiap Tahun
+                  </h4>
+                  <p
+                    class="m-0"
+                    style="font-size: 13px; line-height: 20px; color: #5887a4"
+                  >
+                    Tahun 2010 - 2018
+                  </p>
+                  <div
+                    class="mt-2"
+                    id="stacked-column"
+                    style="height: 290px"
+                  ></div>
                 </div>
               </div>
-            </div>         
+            </div>
             <div class="row mt-4">
               <div class="col-6">
                 <div class="card-healthy">
@@ -532,23 +568,31 @@
                     Rata-rata Penyebab dan Kondisi Kesehatan Murid
                   </h2>
                   <hr />
-                  <div class="d-flex flex-column" style="gap: 20px;">
+                  <div class="d-flex flex-column" style="gap: 20px">
                     <div>
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Perilaku</h5>
                         <div>
-                          <h5 class="table-title">32% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            32% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px;"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 32%; background-color: #02b8d9 !important"
+                          style="
+                            width: 32%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="32"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -559,18 +603,26 @@
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Hiperaktivitas</h5>
                         <div>
-                          <h5 class="table-title">28% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            28% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 28%; background-color: #02b8d9 !important"
+                          style="
+                            width: 28%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="28"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -586,13 +638,19 @@
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 5%; background-color: #02b8d9 !important"
+                          style="
+                            width: 5%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="5"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -603,18 +661,26 @@
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Teman Sebaya</h5>
                         <div>
-                          <h5 class="table-title">20% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            20% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 20%; background-color: #02b8d9 !important"
+                          style="
+                            width: 20%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="20"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -625,18 +691,26 @@
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Pro-sosial</h5>
                         <div>
-                          <h5 class="table-title">15% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            15% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 15%; background-color: #02b8d9 !important"
+                          style="
+                            width: 15%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="15"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -644,7 +718,7 @@
                       </div>
                     </div>
                   </div>
-                </div>                
+                </div>
               </div>
               <div class="col-6">
                 <div class="card-healthy">
@@ -652,23 +726,31 @@
                     Rata-rata Penyebab dan Kondisi Akademik Murid
                   </h2>
                   <hr />
-                  <div class="d-flex flex-column" style="gap: 20px;">
+                  <div class="d-flex flex-column" style="gap: 20px">
                     <div>
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Demotivation</h5>
                         <div>
-                          <h5 class="table-title">32% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            32% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px;"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 32%; background-color: #02b8d9 !important"
+                          style="
+                            width: 32%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="32"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -679,18 +761,26 @@
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Sulit Konsentransi</h5>
                         <div>
-                          <h5 class="table-title">28% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            28% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 28%; background-color: #02b8d9 !important"
+                          style="
+                            width: 28%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="28"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -706,13 +796,19 @@
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 5%; background-color: #02b8d9 !important"
+                          style="
+                            width: 5%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="5"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -723,18 +819,26 @@
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Ketidakhadiran</h5>
                         <div>
-                          <h5 class="table-title">20% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            20% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 20%; background-color: #02b8d9 !important"
+                          style="
+                            width: 20%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="20"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -745,18 +849,26 @@
                       <div class="d-flex justify-content-between mb-2">
                         <h5 class="title-progress">Lainnya</h5>
                         <div>
-                          <h5 class="table-title">15% <span>(11 kasus)</span></h5>
+                          <h5 class="table-title">
+                            15% <span>(11 kasus)</span>
+                          </h5>
                         </div>
                       </div>
                       <div
                         class="progress mb-0"
-                        style="background-color: #e2ecf4 !important; height: 8px"
+                        style="
+                          background-color: #e2ecf4 !important;
+                          height: 8px;
+                        "
                       >
                         <div
                           class="progress-bar"
                           role="progressbar"
                           aria-label="Basic example"
-                          style="width: 15%; background-color: #02b8d9 !important"
+                          style="
+                            width: 15%;
+                            background-color: #02b8d9 !important;
+                          "
                           aria-valuenow="15"
                           aria-valuemin="0"
                           aria-valuemax="100"
@@ -764,7 +876,7 @@
                       </div>
                     </div>
                   </div>
-                </div>                
+                </div>
               </div>
               <div class="col-6"></div>
             </div>
