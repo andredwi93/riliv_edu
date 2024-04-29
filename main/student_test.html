@@ -378,29 +378,111 @@
         <div class="container-full">
           <!-- Main content -->
           <section class="content mb-4">
-            <div
-              class="d-flex justify-content-between align-items-center"
-              style="
-                background-color: #eff9fb;
-                border-radius: 24px;
-                padding: 32px;
-              "
-            >
-              <div class="d-flex align-items-center" style="gap: 24px">
-                <img
-                  src="/assets/icons/custom/support.svg"
-                  alt="ic-support"
-                  width="60"
-                  height="60"
-                />
-                <div>
-                  <h1 class="main-title">Butuh Informasi atau Bantuan?</h1>
-                  <p class="m-0" style="font-size: 14px; color: #1c395f">
-                    Butuh Informasi atau Bantuan?
-                  </p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h1 class="main-title m-0">Daftar Pelaksanaan Tes</h1>
+                <p class="main-desc m-0">
+                  Lihat seluruh data tes yang telah Anda buat di sini.
+                </p>
+              </div>
+              <a href="create_test.html" class="primary-custom-btn">Beri Tes</a>
+            </div>
+            <div class="row mt-4">
+              <div class="col col-md-5">
+                <div class="mb-3">
+                  <input
+                    type="search"
+                    class="form-control"
+                    id="search"
+                    placeholder="Cari nama kelas di sini..."
+                  />
                 </div>
               </div>
-              <a href="#" class="primary-custom-btn">Hubungi Riliv</a>
+              <div class="col col-md-7">
+                <div class="row">
+                  <div class="col col-md-4">
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="exampleFormControlInput1"
+                      placeholder="Tanggal Pengaduan"
+                    />
+                  </div>
+                  <div class="col col-md-4">
+                    <select class="form-select" aria-label="select jurusan">
+                      <option selected>Indikator Pengukuran</option>
+                      <option value="1">Sosiometri</option>
+                      <option value="2">AUM</option>
+                      <option value="2">DCM</option>
+                    </select>
+                  </div>
+                  <div class="col col-md-4">
+                    <select class="form-select" aria-label="select kelas">
+                      <option selected>Kelas</option>
+                      <option value="1">X</option>
+                      <option value="2">XI</option>
+                      <option value="3">XII</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead style="background-color: rgba(240, 245, 249, 0.5)">
+                  <tr style="font-size: 12px; color: #abc3d2">
+                    <th>ID TES</th>
+                    <th>TANGGAL DIBUAT</th>
+                    <th>KELAS</th>
+                    <th>INDIKATOR PENGUKURAN</th>
+                    <th>AKSI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="font-size: 13px; color: #5887a4">
+                    <td>#p245879</td>
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>XIIPS 1</td>
+                    <td>Sosiometri</td>
+                    <td class="py-4">
+                      <a href="detail_siswa.html">
+                        <img
+                          src="/assets/icons/custom/ic-detail.svg"
+                          alt="ic-detail"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr style="font-size: 13px; color: #5887a4">
+                    <td>#p245879</td>
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>XIIPS 1</td>
+                    <td>Sosiometri</td>
+                    <td class="py-4">
+                      <a href="detail_siswa.html">
+                        <img
+                          src="/assets/icons/custom/ic-detail.svg"
+                          alt="ic-detail"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr style="font-size: 13px; color: #5887a4">
+                    <td>#p245879</td>
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>XIIPS 1</td>
+                    <td>Sosiometri</td>
+                    <td class="py-4">
+                      <a href="detail_siswa.html">
+                        <img
+                          src="/assets/icons/custom/ic-detail.svg"
+                          alt="ic-detail"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
           <!-- /.content -->
