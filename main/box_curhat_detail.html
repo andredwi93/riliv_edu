@@ -364,219 +364,201 @@
         <div class="container-full">
           <!-- Main content -->
           <section class="content mb-4">
-            <div class="row">
-              <div class="col-12">
-                <div class="d-flex justify-content-between align-items-center">
+            <a
+              href="box_curhat.html"
+              class="d-flex align-items-center card-test-desc"
+              style="gap: 16px; color: #5887a4 !important"
+            >
+              <i
+                class="mdi mdi-arrow-left"
+                style="font-size: 24px; color: #5887a4"
+              ></i>
+              <span>Kembali</span>
+            </a>
+            <div class="mt-4 d-flex justify-content-between align-items-center">
+              <div>
+                <h1 class="table-title">Detail Pengaduan</h1>
+                <h3 class="title-progress" style="color: #5887a4">
+                  Subject 1 Pengaduan
+                </h3>
+              </div>
+              <div
+                style="
+                  background-color: #eff9fb;
+                  border: 1px solid #aee6f6;
+                  padding: 6px 24px;
+                  border-radius: 100px;
+                  font-size: 13px;
+                  color: #36c8e3;
+                  font-weight: 500;
+                "
+              >
+                Sedang Berlangsung
+              </div>
+            </div>
+            <div class="mt-4">
+              <div>
+                <label for="staticEmail" class="form-label label-curhat"
+                  >Tanggal Lapor</label
+                >
+                <div>
+                  <input
+                    type="date"
+                    readonly
+                    class="form-control"
+                    id="staticEmail"
+                    value="2024-03-06"
+                    style="background: #f0f5f9"
+                  />
+                </div>
+              </div>
+              <div class="mt-2">
+                <label for="message" class="form-label label-curhat"
+                  >Pesan yang Disampaikan</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  style="background-color: #f0f5f9"
+                  readonly
+                >
+Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea
+                >
+              </div>
+              <div class="mt-2">
+                <label for="message" class="form-label label-curhat"
+                  >Status Pengaduan</label
+                >
+                <div class="d-flex">
                   <div>
-                    <h1 class="table-title">
-                      Aktivitas Tes Kesehatan Mental Siswa
-                    </h1>
-                    <p class="table-desc">
-                      Pantau aktivitas tes dari seluruh siswa di sini.
-                    </p>
+                    <input
+                      name="group5"
+                      type="radio"
+                      id="active"
+                      class="with-gap radio-col-info"
+                    />
+                    <label for="active" style="font-size: 12px">Aktif</label>
                   </div>
-                  <ul class="nav nav-pills justify-content-end mb-20">
-                    <li class="nav-item">
-                      <a
-                        href="#navpills2-1"
-                        class="nav-link active"
-                        data-bs-toggle="tab"
-                        aria-expanded="false"
-                        >Semua Aktivitas</a
-                      >
-                    </li>
-                    <li class="nav-item">
-                      <a
-                        href="#navpills2-2"
-                        class="nav-link"
-                        data-bs-toggle="tab"
-                        aria-expanded="false"
-                        >Telah Selesai</a
-                      >
-                    </li>
-                  </ul>
-                </div>
-                <div class="row">
-                  <div class="col col-md-3">
-                    <div class="mb-3">
-                      <input
-                        type="search"
-                        class="form-control"
-                        id="search"
-                        placeholder="Cari nama siswa di sini..."
-                      />
-                    </div>
-                  </div>
-                  <div class="col col-md-9">
-                    <div class="row">
-                      <div class="col col-md-3">
-                        <input
-                          type="date"
-                          class="form-control"
-                          id="exampleFormControlInput1"
-                          placeholder="Tanggal Pengaduan"
-                        />
-                      </div>
-                      <div class="col col-md-3">
-                        <select class="form-select" aria-label="select gender">
-                          <option selected>Indikator Pengukuran</option>
-                          <option value="1">Sosiometri</option>
-                          <option value="2">AUM</option>
-                          <option value="2">DCM</option>
-                        </select>
-                      </div>
-                      <div class="col col-md-3">
-                        <select
-                          class="form-select"
-                          aria-label="select kelas"
-                          id="progressSelector"
-                        >
-                          <option selected>Kelas</option>
-                          <option value="classX">X</option>
-                          <option value="2">XI</option>
-                          <option value="3">XII</option>
-                        </select>
-                      </div>
-                      <div class="col col-md-3">
-                        <select class="form-select" aria-label="select jurusan">
-                          <option selected>Status</option>
-                          <option value="1">Berlangsung</option>
-                          <option value="2">Selesai</option>
-                        </select>
-                      </div>
-                    </div>
+                  <div class="ms-3">
+                    <input
+                      name="group5"
+                      type="radio"
+                      id="inactive"
+                      class="with-gap radio-col-info"
+                    />
+                    <label for="inactive" style="font-size: 12px"
+                      >Ditutup/Tidak Aktif</label
+                    >
                   </div>
                 </div>
-                <div class="mt-2 mb-4 show" id="classX" style="display: none;">
-                  <div
-                    class="d-flex align-items-center justify-content-between"
-                  >
-                    <h3 class="title-progress">
-                      Siswa yang Sudah Selesai Mengerjakan
+              </div>
+              <hr />
+              <div class="d-flex align-items-center" style="gap: 12px">
+                <img
+                  src="/assets/icons/custom/ic-man.png"
+                  alt="ic-man"
+                  width="42"
+                  height="42"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-between"
+                  style="flex: 1"
+                >
+                  <div>
+                    <h3
+                      class="title-progress mb-0"
+                      style="font-size: 13px !important"
+                    >
+                      Rival Syah
                     </h3>
-                    <p class="m-0" style="font-size: 13px; color: #044b77">
-                      <span class="table-title">32%</span> (10/20 siswa)
-                    </p>
+                    <h4
+                      class="title-progress mb-0"
+                      style="font-weight: 400; color: #5887a4"
+                    >
+                      Saya
+                    </h4>
                   </div>
-                  <div
-                    class="progress mb-0 mt-2"
-                    style="background-color: #e2ecf4 !important; height: 8px"
+                  <p
+                    class="title-progress mb-0"
+                    style="font-weight: 400; color: #5887a4"
                   >
-                    <div
-                      class="progress-bar"
-                      role="progressbar"
-                      aria-label="Basic example"
-                      style="width: 32%; background-color: #02b8d9 !important"
-                      aria-valuenow="32"
-                      aria-valuemin="0"
-                      aria-valuemax="100"
-                    ></div>
-                  </div>
+                    20 Apr 2024, 11.43 (11 hari yang lalu)
+                  </p>
                 </div>
-                <div class="tab-content">
-                  <div class="tab-pane active" id="navpills2-1">
-                    <div class="table-responsive">
-                      <table class="table">
-                        <thead
-                          style="background-color: rgba(240, 245, 249, 0.5)"
-                        >
-                          <tr style="font-size: 12px; color: #abc3d2">
-                            <th>ID SISWA</th>
-                            <th>TANGGAL MULAI</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>INDIKATOR PENGUKURAN</th>
-                            <th>KELAS</th>
-                            <th>STATUS</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr style="font-size: 13px; color: #5887a4">
-                            <td>#p245879</td>
-                            <td>14 April 2021, 10:30 AM</td>
-                            <td>Aaliyah Clark</td>
-                            <td>Sosiometri</td>
-                            <td>XII IPS 1</td>
-                            <td class="py-4">
-                              <span class="badge-ongoing">Berlangsung</span>
-                            </td>
-                          </tr>
-                          <tr style="font-size: 13px; color: #5887a4">
-                            <td>#p245879</td>
-                            <td>14 April 2021, 10:30 AM</td>
-                            <td>Aaliyah Clark</td>
-                            <td>Sosiometri</td>
-                            <td>XII IPS 1</td>
-                            <td class="py-4">
-                              <span class="badge-done">Telah Selesai</span>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
+              </div>
+              <textarea
+                class="form-control mt-3"
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                style="background-color: #f0f5f9"
+                readonly
+              >
+Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea
+              >
+              <div class="d-flex align-items-center mt-3" style="gap: 12px">
+                <img
+                  src="/assets/icons/custom/ic-female.png"
+                  alt="ic-man"
+                  width="42"
+                  height="42"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-between"
+                  style="flex: 1"
+                >
+                  <div>
+                    <h3
+                      class="title-progress mb-0"
+                      style="font-size: 13px !important"
+                    >
+                      Jessica Alia
+                    </h3>
+                    <h4
+                      class="title-progress mb-0"
+                      style="font-weight: 400; color: #5887a4"
+                    >
+                      Guru BK
+                    </h4>
                   </div>
-                  <div class="tab-pane" id="navpills2-2">
-                    <div class="table-responsive tab-pane">
-                      <table class="table">
-                        <thead
-                          style="background-color: rgba(240, 245, 249, 0.5)"
-                        >
-                          <tr style="font-size: 12px; color: #abc3d2">
-                            <th>ID SISWA</th>
-                            <th>NAMA LENGKAP</th>
-                            <th>INDIKATOR PENGUKURAN</th>
-                            <th>KELAS</th>
-                            <th>SKOR</th>
-                            <th>REKOMENDASI LAYANAN</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr style="font-size: 13px; color: #5887a4">
-                            <td>#p245879</td>
-                            <td>Aaliyah Clark</td>
-                            <td>Sosiometri</td>
-                            <td>XII IPS 1</td>
-                            <td>
-                              <span class="red-score">2.25</span>
-                            </td>
-                            <td class="py-4">
-                              <button
-                                type="button"
-                                class="primary-custom-btn"
-                                style="border: none"
-                                data-bs-toggle="modal"
-                                data-bs-target="#modal-center"
-                              >
-                                Beri Rekomendasi
-                              </button>
-                            </td>
-                          </tr>
-                          <tr style="font-size: 13px; color: #5887a4">
-                            <td>#p245879</td>
-                            <td>Aaliyah Clark</td>
-                            <td>Sosiometri</td>
-                            <td>XII IPS 1</td>
-                            <td>
-                              <span class="green-score">6.25</span>
-                            </td>
-                            <td class="py-4">Konseling Chat</td>
-                          </tr>
-                          <tr style="font-size: 13px; color: #5887a4">
-                            <td>#p245879</td>
-                            <td>Aaliyah Clark</td>
-                            <td>Sosiometri</td>
-                            <td>XII IPS 1</td>
-                            <td>
-                              <span class="yellow-score">4.25</span>
-                            </td>
-                            <td class="py-4">
-                              Konseling Call & Mengelola Stress
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
+                  <p
+                    class="title-progress mb-0"
+                    style="font-weight: 400; color: #5887a4"
+                  >
+                    20 Apr 2024, 11.43 (11 hari yang lalu)
+                  </p>
                 </div>
+              </div>
+              <textarea
+                class="form-control mt-3"
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                style="background-color: #f0f5f9"
+                readonly
+              >
+Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea
+              >
+              <div class="mt-3">
+                <label for="message" class="form-label label-curhat"
+                  >Pesan yang Disampaikan</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="ketik di sini"
+                ></textarea>
+              </div>
+              <div class="d-flex justify-content-end mt-4">
+                <button class="secondary-purple">Kirim</button>
               </div>
             </div>
           </section>
@@ -584,79 +566,7 @@
         </div>
       </div>
       <!-- /.content-wrapper -->
-      <div class="modal center-modal fade" id="modal-center" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content" style="border-radius: 16px">
-            <div class="modal-body">
-              <h5
-                class="title-progress mt-3"
-                style="font-weight: 500 !important"
-              >
-                Rekomendasikan Layanan
-              </h5>
-              <p style="font-size: 12px; color: #5887a4">
-                Anda dapat memilih lebih dari 1 rekomendasi untuk siswa sesuai
-                kebutuhan mereka.
-              </p>
-              <hr />
-              <div class="row">
-                <div class="col-12 col-md-6">
-                  <input
-                    type="checkbox"
-                    id="chat"
-                    class="filled-in chk-col-info"
-                  />
-                  <label for="chat">Konseling Chat</label>
-                </div>
-                <div class="col-12 col-md-6">
-                  <input
-                    type="checkbox"
-                    id="call"
-                    class="filled-in chk-col-info"
-                  />
-                  <label for="call">Konseling Call</label>
-                </div>
-                <div class="col-12 col-md-6">
-                  <input
-                    type="checkbox"
-                    id="video"
-                    class="filled-in chk-col-info"
-                  />
-                  <label for="video">Konseling Video Call</label>
-                </div>
-                <div class="col-12 col-md-6">
-                  <input
-                    type="checkbox"
-                    id="offline"
-                    class="filled-in chk-col-info"
-                  />
-                  <label for="offline">Konseling Offline</label>
-                </div>
-                <div class="col-12 col-md-6"></div>
-                <div class="col-12 col-md-6"></div>
-                <div class="col-12 col-md-6"></div>
-                <div class="col-12 col-md-6"></div>
-              </div>
-              <div class="d-flex" style="gap: 16px; margin-top: 32px">
-                <button
-                  data-bs-dismiss="modal"
-                  class="outline-btn"
-                  style="flex: 1; background-color: #fff"
-                >
-                  Batal
-                </button>
-                <button
-                  data-bs-dismiss="modal"
-                  class="secondary-btn"
-                  style="flex: 1"
-                >
-                  Berikan Tindakan
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+
       <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
     </div>
@@ -671,21 +581,7 @@
     <script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 
-    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
-    <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
-    <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
-    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
-
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
-    <script>
-      $(document).ready(function () {
-        // Make sure the code runs after all DOM elements have loaded
-        $("#progressSelector").change(function () {
-          $(".show").hide(); // Hide all color divs
-          $("#" + $(this).val()).show(); // Show the selected color div
-        });
-      });
-    </script>
   </body>
 </html>

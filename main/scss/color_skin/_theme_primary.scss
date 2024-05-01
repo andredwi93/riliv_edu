@@ -2741,13 +2741,13 @@ $box-bod-s: solid;
             >a{ 
                 padding: 10px 32px;
                 &.active{
-                       border-bottom-color: #02BBDD;
-	                   background-color: #02BBDD !important;
+                       border-bottom-color: #75519E;
+	                   background-color: #75519E !important;
                        color: $white;
                        border-radius: 100px;
                     @include hover-focus-state{
-                       border-bottom-color: #02BBDD;
-	                   background-color: #02BBDD !important;
+                       border-bottom-color: #75519E;
+	                   background-color: #75519E !important;
                        color: $white;
                     }     
                 }

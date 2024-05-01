@@ -2467,14 +2467,14 @@ Theme Primary Color
   padding: 10px 32px;
 }
 .theme-primary .nav-pills > li > a.active {
-  border-bottom-color: #02BBDD;
-  background-color: #02BBDD !important;
+  border-bottom-color: #75519E;
+  background-color: #75519E !important;
   color: #ffffff;
   border-radius: 100px;
 }
 .theme-primary .nav-pills > li > a.active:hover, .theme-primary .nav-pills > li > a.active:focus {
-  border-bottom-color: #02BBDD;
-  background-color: #02BBDD !important;
+  border-bottom-color: #75519E;
+  background-color: #75519E !important;
   color: #ffffff;
 }
 .theme-primary .mailbox-nav .nav-pills > li > a:hover, .theme-primary .mailbox-nav .nav-pills > li > a:focus {

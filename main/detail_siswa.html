@@ -128,9 +128,6 @@
                 </a>
                 <ul class="dropdown-menu animated flipInX">
                   <li class="user-body">
-                    <a class="dropdown-item" href="extra_profile.html"
-                      ><i class="ti-user text-muted me-2"></i> Profile</a
-                    >
                     <a class="dropdown-item" href="../index.html"
                       ><i class="ti-lock text-muted me-2"></i> Logout</a
                     >
@@ -221,7 +218,7 @@
                   </a>
                   <ul class="treeview-menu">
                     <li>
-                      <a href="insight.html"
+                      <a href="summary.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
@@ -277,23 +274,23 @@
                   </a>
                   <ul class="treeview-menu">
                     <li>
-                      <a href="#"
+                      <a href="test_method.html"
+                        ><i>
+                          <img
+                            src="../assets/icons/custom/bullet.svg"
+                            alt="ic-dashboard"
+                          /> </i
+                        >Metode Tes</a
+                      >
+                    </li>
+                    <li>
+                      <a href="student_test.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
                             alt="ic-dashboard"
                           /> </i
                         >Pelaksanaan Tes</a
-                      >
-                    </li>
-                    <li>
-                      <a href="#"
-                        ><i>
-                          <img
-                            src="../assets/icons/custom/bullet.svg"
-                            alt="ic-dashboard"
-                          /> </i
-                        >Metode & Pertanyaan</a
                       >
                     </li>
                   </ul>
@@ -354,17 +351,6 @@
                       />
                     </i>
                     <span>Pengaturan</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="support.html">
-                    <i>
-                      <img
-                        src="../assets/icons/custom/help.svg"
-                        alt="ic-help"
-                      />
-                    </i>
-                    <span>Bantuan</span>
                   </a>
                 </li>
               </ul>
@@ -474,6 +460,15 @@
                     data-bs-toggle="tab"
                     aria-expanded="false"
                     >Hasil Journey</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    href="#navpills2-4"
+                    class="nav-link"
+                    data-bs-toggle="tab"
+                    aria-expanded="false"
+                    >Kotak Curhat</a
                   >
                 </li>
               </ul>
@@ -1127,33 +1122,274 @@
                   </div>
                 </div>
                 <div id="navpills2-2" class="tab-pane">
-                  <div class="row">
-                    <div class="col-12 col-md-6">
-                      <div>
-                        <label for="email" class="form-label label-curhat"
-                          >Email</label
+                  <h1 class="table-title">Sedang Berlangsung</h1>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3"
+                    style="
+                      border: 1px solid #e2ecf4;
+                      padding: 16px;
+                      border-radius: 12px;
+                      gap: 12px;
+                    "
+                  >
+                    <div
+                      style="
+                        width: 6px;
+                        height: 72px;
+                        background: #75519e;
+                        border-radius: 12px;
+                      "
+                    ></div>
+                    <img
+                      src="/assets/icons/custom/dummy-ava.png"
+                      alt="ava"
+                      width="60"
+                      height="60"
+                    />
+                    <div style="flex: 1">
+                      <h4 class="title-progress">
+                        Lystianigtyas Alfani P., S.Psi
+                        <span
+                          style="
+                            font-size: 12px;
+                            font-weight: 500;
+                            color: #5887a4;
+                          "
+                          >Konselor</span
                         >
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="email"
-                          placeholder="Masukkan email"
-                        />
+                      </h4>
+                      <p
+                        class="subtitle-signin m-0"
+                        style="text-align: left !important"
+                      >
+                        Berakhir pada 12/03/2020 12.00 WIB
+                      </p>
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
+                        <div
+                          class="d-flex align-items-center"
+                          style="flex: 1; gap: 8px"
+                        >
+                          <img
+                            src="/assets/icons/custom/ic-time.svg"
+                            alt="time"
+                            width="24"
+                            height="24"
+                          />
+                          <p
+                            class="subtitle-signin m-0"
+                            style="text-align: left !important"
+                          >
+                            Selasa, 12 Jan 2024 Pukul 3:10 PM
+                          </p>
+                        </div>
+
+                        <div
+                          class="d-flex align-items-center"
+                          style="flex: 1; gap: 8px"
+                        >
+                          <img
+                            src="/assets/icons/custom/ic-call.svg"
+                            alt="time"
+                            width="24"
+                            height="24"
+                          />
+                          <p
+                            class="subtitle-signin m-0"
+                            style="text-align: left !important"
+                          >
+                            <span class="fw-500">Konseling Call</span>
+                            40m
+                          </p>
+                        </div>
                       </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                      <div>
-                        <label for="name" class="form-label label-curhat"
-                          >Jumlah Pertanyaan</label
+                  </div>
+                  <div class="mt-4">
+                    <h1 class="table-title">Konseling yang Telah Diikuti</h1>
+                    <div class="row mt-4">
+                      <div class="col-md-6 col-12">
+                        <div
+                          style="
+                            border: 1px solid #e2ecf4;
+                            border-radius: 12px;
+                            padding: 16px;
+                          "
                         >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="name"
-                          value="0 Pertanyaan"
-                          style="background-color: #f0f5f9"
-                          readonly
-                        />
+                          <div
+                            class="d-flex align-items-center"
+                            style="gap: 12px"
+                          >
+                            <img
+                              src="/assets/icons/custom/dummy-ava.png"
+                              alt="challenge"
+                              width="60"
+                              height="60"
+                            />
+                            <div style="flex: 1">
+                              <h4 class="title-progress">
+                                Lystianigtyas Alfani P., S.Psi
+                                <span
+                                  style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    color: #5887a4;
+                                  "
+                                  >Konselor</span
+                                >
+                              </h4>
+                              <p
+                                class="subtitle-signin m-0"
+                                style="text-align: left !important"
+                              >
+                                Berakhir pada 12/03/2020 12.00 WIB
+                              </p>
+                              <div
+                                class="d-flex align-items-center"
+                                style="gap: 8px"
+                              >
+                                <img
+                                  src="/assets/icons/custom/ic-call.svg"
+                                  alt="time"
+                                  width="24"
+                                  height="24"
+                                />
+                                <p
+                                  class="subtitle-signin m-0"
+                                  style="text-align: left !important"
+                                >
+                                  <span class="fw-500">Konseling Call</span>
+                                  40m
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="mt-3"
+                            style="
+                              background-color: #f9f7ff;
+                              border-radius: 12px;
+                              padding: 16px;
+                            "
+                          >
+                            <h3
+                              class="fw-600"
+                              style="font-size: 13px; color: #75519e"
+                            >
+                              Gejala yang Dirasakan
+                            </h3>
+                            <p style="font-size: 12px; color: #5887a4">
+                              Lorem ipsum dolor sit amet consectetur. Diam amet
+                              quis quis ut porta magna eget. Nunc velit nunc
+                              nulla ultricies egestas. Ullamcorper cursus justo
+                              sagittis nec. Eu sagittis magna nulla tellus
+                              lacus.
+                            </p>
+                            <a
+                              href="#"
+                              class="fw-500 d-flex align-items-center"
+                              style="gap: 4px; font-size: 12px; color: #1c395f"
+                            >
+                              <span>Lihat Catatan Sesi Konseling</span>
+                              <i
+                                class="fa fa-fw fa-chevron-right"
+                                style="font-size: 16px; color: #1c395f"
+                              ></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <div
+                          style="
+                            border: 1px solid #e2ecf4;
+                            border-radius: 12px;
+                            padding: 16px;
+                          "
+                        >
+                          <div
+                            class="d-flex align-items-center"
+                            style="gap: 12px"
+                          >
+                            <img
+                              src="/assets/icons/custom/dummy2.png"
+                              alt="challenge"
+                              width="60"
+                              height="60"
+                            />
+                            <div style="flex: 1">
+                              <h4 class="title-progress">
+                                Lystianigtyas Alfani P., S.Psi
+                                <span
+                                  style="
+                                    font-size: 12px;
+                                    font-weight: 500;
+                                    color: #5887a4;
+                                  "
+                                  >Konselor</span
+                                >
+                              </h4>
+                              <p
+                                class="subtitle-signin m-0"
+                                style="text-align: left !important"
+                              >
+                                Berakhir pada 12/03/2020 12.00 WIB
+                              </p>
+                              <div
+                                class="d-flex align-items-center"
+                                style="gap: 8px"
+                              >
+                                <img
+                                  src="/assets/icons/custom/ic-offline.svg"
+                                  alt="time"
+                                  width="24"
+                                  height="24"
+                                />
+                                <p
+                                  class="subtitle-signin m-0"
+                                  style="text-align: left !important"
+                                >
+                                  <span class="fw-500">Konseling Offline</span>
+                                  40m
+                                </p>
+                              </div>
+                            </div>
+                          </div>
+                          <div
+                            class="mt-3"
+                            style="
+                              background-color: #f9f7ff;
+                              border-radius: 12px;
+                              padding: 16px;
+                            "
+                          >
+                            <h3
+                              class="fw-600"
+                              style="font-size: 13px; color: #75519e"
+                            >
+                              Gejala yang Dirasakan
+                            </h3>
+                            <p style="font-size: 12px; color: #5887a4">
+                              Lorem ipsum dolor sit amet consectetur. Diam amet
+                              quis quis ut porta magna eget. Nunc velit nunc
+                              nulla ultricies egestas. Ullamcorper cursus justo
+                              sagittis nec. Eu sagittis magna nulla tellus
+                              lacus.
+                            </p>
+                            <a
+                              href="#"
+                              class="fw-500 d-flex align-items-center"
+                              style="gap: 4px; font-size: 12px; color: #1c395f"
+                            >
+                              <span>Lihat Catatan Sesi Konseling</span>
+                              <i
+                                class="fa fa-fw fa-chevron-right"
+                                style="font-size: 16px; color: #1c395f"
+                              ></i>
+                            </a>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -1551,7 +1787,213 @@
                               class="fw-500 d-flex align-items-center"
                               style="gap: 4px; font-size: 12px; color: #1c395f"
                             >
-                              <span>Lihat Jawaban</span>
+                              <span
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal-feedback"
+                                >Lihat Jawaban</span
+                              >
+                              <i
+                                class="fa fa-fw fa-chevron-right"
+                                style="font-size: 16px; color: #1c395f"
+                              ></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div id="navpills2-4" class="tab-pane">
+                  <h1 class="table-title">Sedang Diajukan</h1>
+                  <div
+                    class="d-flex justify-content-between align-items-center mt-3 mb-2"
+                    style="
+                      border: 1px solid #e2ecf4;
+                      padding: 24px;
+                      border-radius: 12px;
+                      gap: 24px;
+                    "
+                  >
+                    <div style="flex: 1">
+                      <h4 class="title-progress">Subjec 1</h4>
+                      <p
+                        class="subtitle-signin m-0"
+                        style="text-align: left !important; line-height: 20px"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                        urna erat amet tempor imperdiet pretium nisl magnis.
+                      </p>
+                    </div>
+                    <button
+                      class="primary-custom-btn border-0"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-action-feedback"
+                    >
+                      Berikan Feedback
+                    </button>
+                  </div>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                    style="
+                      border: 1px solid #e2ecf4;
+                      padding: 24px;
+                      border-radius: 12px;
+                      gap: 24px;
+                    "
+                  >
+                    <div style="flex: 1">
+                      <h4 class="title-progress">Subjec 2</h4>
+                      <p
+                        class="subtitle-signin m-0"
+                        style="text-align: left !important; line-height: 20px"
+                      >
+                        Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                        urna erat amet tempor imperdiet pretium nisl magnis.
+                      </p>
+                    </div>
+                    <button class="primary-custom-btn border-0">
+                      Berikan Feedback
+                    </button>
+                  </div>
+                  <div class="mt-4">
+                    <h1 class="table-title">Kotak Curhat yang Telah Selesai</h1>
+                    <div class="row mt-4">
+                      <div class="col-md-6 col-12">
+                        <div
+                          style="
+                            border: 1px solid #e2ecf4;
+                            border-radius: 12px;
+                            padding: 16px;
+                          "
+                        >
+                          <div
+                            class="d-flex align-items-center"
+                            style="gap: 12px"
+                          >
+                            <img
+                              src="/assets/icons/custom/subject.png"
+                              alt="challenge"
+                              width="92"
+                              height="100"
+                            />
+                            <div style="flex: 1">
+                              <h3
+                                class="fw-600"
+                                style="font-size: 14px; color: #044b77"
+                              >
+                                Subject 1
+                              </h3>
+                              <p
+                                class="m-0"
+                                style="font-size: 12px; color: #5887a4"
+                              >
+                                Lorem ipsum dolor sit amet consectetur. Id
+                                scelerisque urna erat amet tempor imperdiet
+                                pretium nisl magnis.
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="mt-3"
+                            style="
+                              background-color: #f9f7ff;
+                              border-radius: 12px;
+                              padding: 16px;
+                            "
+                          >
+                            <h3
+                              class="fw-600"
+                              style="font-size: 13px; color: #75519e"
+                            >
+                              Tindakan yang Dilakukan
+                            </h3>
+                            <p style="font-size: 12px; color: #5887a4">
+                              Lorem ipsum dolor sit amet consectetur. Diam amet
+                              quis quis ut porta magna eget. Nunc velit nunc
+                              nulla ultricies egestas. Ullamcorper cursus justo
+                              sagittis nec. Eu sagittis magna nulla tellus
+                              lacus.
+                            </p>
+                            <a
+                              href="#"
+                              class="fw-500 d-flex align-items-center"
+                              style="gap: 4px; font-size: 12px; color: #1c395f"
+                            >
+                              <span>Lihat Detail</span>
+                              <i
+                                class="fa fa-fw fa-chevron-right"
+                                style="font-size: 16px; color: #1c395f"
+                              ></i>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-6 col-12">
+                        <div
+                          style="
+                            border: 1px solid #e2ecf4;
+                            border-radius: 12px;
+                            padding: 16px;
+                          "
+                        >
+                          <div
+                            class="d-flex align-items-center"
+                            style="gap: 12px"
+                          >
+                            <img
+                              src="/assets/icons/custom/subject.png"
+                              alt="career"
+                              width="92"
+                              height="100"
+                            />
+                            <div style="flex: 1">
+                              <h3
+                                class="fw-600"
+                                style="font-size: 14px; color: #044b77"
+                              >
+                                Subject 2
+                              </h3>
+                              <p
+                                class="m-0"
+                                style="font-size: 12px; color: #5887a4"
+                              >
+                                Lorem ipsum dolor sit amet consectetur. Id
+                                scelerisque urna erat amet tempor imperdiet
+                                pretium nisl magnis.
+                              </p>
+                            </div>
+                          </div>
+                          <div
+                            class="mt-3"
+                            style="
+                              background-color: #f9f7ff;
+                              border-radius: 12px;
+                              padding: 16px;
+                            "
+                          >
+                            <h3
+                              class="fw-600"
+                              style="font-size: 13px; color: #75519e"
+                            >
+                              Tindakan yang Dilakukan
+                            </h3>
+                            <p style="font-size: 12px; color: #5887a4">
+                              Lorem ipsum dolor sit amet consectetur. Diam amet
+                              quis quis ut porta magna eget. Nunc velit nunc
+                              nulla ultricies egestas. Ullamcorper cursus justo
+                              sagittis nec. Eu sagittis magna nulla tellus
+                              lacus.
+                            </p>
+                            <a
+                              href="#"
+                              class="fw-500 d-flex align-items-center"
+                              style="gap: 4px; font-size: 12px; color: #1c395f"
+                            >
+                              <span
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal-feedback"
+                                >Lihat Detail`</span
+                              >
                               <i
                                 class="fa fa-fw fa-chevron-right"
                                 style="font-size: 16px; color: #1c395f"
@@ -1585,7 +2027,10 @@
                 Lorem ipsum dolor sit amet consectetur.
               </p>
               <hr />
-              <label id="feedback" style="font-size: 13px; font-weight: 500; color: #044b77">
+              <label
+                id="feedback"
+                style="font-size: 13px; font-weight: 500; color: #044b77"
+              >
                 Feedback yang ingin Disampaikan
               </label>
               <textarea
@@ -1605,17 +2050,375 @@
               <div class="d-flex" style="gap: 16px; margin-top: 32px">
                 <button
                   data-bs-dismiss="modal"
-                  class="outline-btn"
+                  class="outline-purple"
                   style="flex: 1; background-color: #fff"
                 >
                   Batal
                 </button>
                 <button
                   data-bs-dismiss="modal"
-                  class="secondary-btn"
+                  class="secondary-purple"
                   style="flex: 1"
                 >
                   Berikan Feedback
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal center-modal fade" id="modal-feedback" tabindex="-1">
+        <div class="modal-dialog" style="top: -40%">
+          <div class="modal-content" style="border-radius: 16px">
+            <div class="modal-body">
+              <h5 class="table-title mt-3" style="font-weight: 500 !important">
+                Feedback yang Diberikan
+              </h5>
+              <div
+                style="
+                  padding: 16px;
+                  background-color: #f6f9fb;
+                  border-radius: 12px;
+                  margin-top: 12px;
+                "
+              >
+                <h2 class="title-progress mb-3">Hasil Jawaban Journey</h2>
+                <div class="d-flex flex-column" style="gap: 12px">
+                  <div class="d-flex" style="gap: 12px">
+                    <div class="bullet-blue">1</div>
+                    <div style="flex: 1">
+                      <h4
+                        class="main-desc m-0 fw-500"
+                        style="color: #044b77 !important"
+                      >
+                        Pertanyaaan Journey 1
+                      </h4>
+                      <p class="m-0" style="font-size: 12px; color: #5887a4">
+                        Lorem ipsum dolor sit amet consectetur. Diam amet quis
+                        quis ut porta magna eget. Nunc velit nunc nulla
+                        ultricies egestas. Ullamcorper cursus justo sagittis
+                        nec. Eu sagittis magna nulla tellus lacus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 12px">
+                    <div class="bullet-blue">1</div>
+                    <div style="flex: 1">
+                      <h4
+                        class="main-desc m-0 fw-500"
+                        style="color: #044b77 !important"
+                      >
+                        Pertanyaaan Journey 1
+                      </h4>
+                      <p class="m-0" style="font-size: 12px; color: #5887a4">
+                        Lorem ipsum dolor sit amet consectetur. Diam amet quis
+                        quis ut porta magna eget. Nunc velit nunc nulla
+                        ultricies egestas. Ullamcorper cursus justo sagittis
+                        nec. Eu sagittis magna nulla tellus lacus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 12px">
+                    <div class="bullet-blue">1</div>
+                    <div style="flex: 1">
+                      <h4
+                        class="main-desc m-0 fw-500"
+                        style="color: #044b77 !important"
+                      >
+                        Pertanyaaan Journey 1
+                      </h4>
+                      <p class="m-0" style="font-size: 12px; color: #5887a4">
+                        Lorem ipsum dolor sit amet consectetur. Diam amet quis
+                        quis ut porta magna eget. Nunc velit nunc nulla
+                        ultricies egestas. Ullamcorper cursus justo sagittis
+                        nec. Eu sagittis magna nulla tellus lacus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 12px">
+                    <div class="bullet-blue">1</div>
+                    <div style="flex: 1">
+                      <h4
+                        class="main-desc m-0 fw-500"
+                        style="color: #044b77 !important"
+                      >
+                        Pertanyaaan Journey 1
+                      </h4>
+                      <p class="m-0" style="font-size: 12px; color: #5887a4">
+                        Lorem ipsum dolor sit amet consectetur. Diam amet quis
+                        quis ut porta magna eget. Nunc velit nunc nulla
+                        ultricies egestas. Ullamcorper cursus justo sagittis
+                        nec. Eu sagittis magna nulla tellus lacus.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="d-flex" style="gap: 12px">
+                    <div class="bullet-blue">1</div>
+                    <div style="flex: 1">
+                      <h4
+                        class="main-desc m-0 fw-500"
+                        style="color: #044b77 !important"
+                      >
+                        Pertanyaaan Journey 1
+                      </h4>
+                      <p class="m-0" style="font-size: 12px; color: #5887a4">
+                        Lorem ipsum dolor sit amet consectetur. Diam amet quis
+                        quis ut porta magna eget. Nunc velit nunc nulla
+                        ultricies egestas. Ullamcorper cursus justo sagittis
+                        nec. Eu sagittis magna nulla tellus lacus.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div style="margin-top: 12px">
+                <h5
+                  class="table-title mt-3"
+                  style="font-weight: 500 !important; color: #75519e !important"
+                >
+                  Feedback yang Diberikan
+                </h5>
+                <p class="m-0" style="font-size: 12px; color: #5887a4">
+                  Lorem ipsum dolor sit amet consectetur. Diam amet quis quis ut
+                  porta magna eget. Nunc velit nunc nulla ultricies egestas.
+                  Ullamcorper cursus justo sagittis nec. Eu sagittis magna nulla
+                  tellus lacus.
+                </p>
+              </div>
+              <div class="d-flex" style="gap: 16px; margin-top: 32px">
+                <button
+                  data-bs-dismiss="modal"
+                  class="outline-btn"
+                  style="flex: 1; background-color: #fff"
+                >
+                  Batal
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="modal center-modal fade"
+        id="modal-action-feedback"
+        tabindex="-1"
+      >
+        <div class="modal-dialog" style="top: -40%">
+          <div class="modal-content" style="border-radius: 16px">
+            <div class="modal-body">
+              <h5
+                class="title-progress mt-3"
+                style="font-weight: 500 !important"
+              >
+                Detail Tindakan
+              </h5>
+              <p style="font-size: 12px; color: #5887a4">
+                Informasi lengkap terkait tindakan yang dilakukan.
+              </p>
+              <hr />
+              <div class="d-flex" style="gap: 12px">
+                <div style="flex: 1">
+                  <label for="staticEmail" class="form-label label-curhat"
+                    >Tanggal Lapor</label
+                  >
+                  <div>
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="staticEmail"
+                      value="2024-03-06"
+                      style="background: #f0f5f9"
+                    />
+                  </div>
+                </div>
+                <div style="flex: 1">
+                  <label for="name" class="form-label label-curhat"
+                    >Nama Siswa</label
+                  >
+                  <div>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="name"
+                      value="Rival Syah"
+                      style="background: #f0f5f9"
+                      readonly
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="mt-3">
+                <label for="subject" class="form-label label-curhat"
+                  >Subject</label
+                >
+                <div>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="subject"
+                    style="background: #f0f5f9"
+                  />
+                </div>
+              </div>
+              <div class="mt-2">
+                <label for="message" class="form-label label-curhat"
+                  >Pesan yang Disampaikan</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  style="background-color: #f0f5f9"
+                >
+Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea
+                >
+              </div>
+
+              <hr />
+              <div class="d-flex align-items-center" style="gap: 12px">
+                <img
+                  src="/assets/icons/custom/ic-man.png"
+                  alt="ic-man"
+                  width="42"
+                  height="42"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-between"
+                  style="flex: 1"
+                >
+                  <div>
+                    <h3
+                      class="title-progress mb-0"
+                      style="font-size: 13px !important"
+                    >
+                      Rival Syah
+                    </h3>
+                    <h4
+                      class="title-progress mb-0"
+                      style="font-weight: 400; color: #5887a4"
+                    >
+                      Saya
+                    </h4>
+                  </div>
+                  <p
+                    class="title-progress mb-0"
+                    style="font-weight: 400; color: #5887a4"
+                  >
+                    20 Apr 2024, 11.43 (11 hari yang lalu)
+                  </p>
+                </div>
+              </div>
+              <textarea
+                class="form-control mt-3"
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                style="background-color: #f0f5f9"
+              >
+Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea
+              >
+              <div class="d-flex align-items-center mt-3" style="gap: 12px">
+                <img
+                  src="/assets/icons/custom/ic-female.png"
+                  alt="ic-man"
+                  width="42"
+                  height="42"
+                />
+                <div
+                  class="d-flex align-items-center justify-content-between"
+                  style="flex: 1"
+                >
+                  <div>
+                    <h3
+                      class="title-progress mb-0"
+                      style="font-size: 13px !important"
+                    >
+                      Jessica Alia
+                    </h3>
+                    <h4
+                      class="title-progress mb-0"
+                      style="font-weight: 400; color: #5887a4"
+                    >
+                      Guru BK
+                    </h4>
+                  </div>
+                  <p
+                    class="title-progress mb-0"
+                    style="font-weight: 400; color: #5887a4"
+                  >
+                    20 Apr 2024, 11.43 (11 hari yang lalu)
+                  </p>
+                </div>
+              </div>
+              <textarea
+                class="form-control mt-3"
+                name="message"
+                id="message"
+                cols="30"
+                rows="5"
+                style="background-color: #f0f5f9"
+              >
+Lorem ipsum dolor sit amet consectetur. Eget nec gravida ultrices arcu porta nulla senectus.</textarea
+              >
+              <div class="mt-2 activeSelect" id="opt1" style="display: none;">
+                <label for="message" class="form-label label-curhat"
+                  >Pesan yang ingin Disampaikan</label
+                >
+                <textarea
+                  class="form-control"
+                  name="message"
+                  id="message"
+                  cols="30"
+                  rows="5"
+                  placeholder="Tulis sesuatu"
+                ></textarea>
+              </div>
+              <div class="mt-2">
+                <label for="message" class="form-label label-curhat"
+                  >Status Pengaduan</label
+                >
+                <div class="d-flex">
+                  <div>
+                    <input
+                      name="group5"
+                      type="radio"                      
+                      id="active"
+                      value="opt1"
+                      class="with-gap radio-col-info"
+                    />
+                    <label for="active" style="font-size: 12px">Aktif</label>
+                  </div>
+                  <div class="ms-3">
+                    <input
+                      name="group5"
+                      type="radio"
+                      id="inactive"
+                      value="inactive"
+                      class="with-gap radio-col-info"
+                    />
+                    <label for="inactive" style="font-size: 12px"
+                      >Ditutup/Tidak Aktif</label
+                    >
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex" style="gap: 16px; margin-top: 32px">
+                <button
+                  data-bs-dismiss="modal"
+                  class="outline-purple"
+                  style="flex: 1; background-color: #fff"
+                >
+                  Batal
+                </button>
+                <button
+                  data-bs-dismiss="modal"
+                  class="secondary-purple"
+                  style="flex: 1;"
+                >
+                  Berikan Tindakan
                 </button>
               </div>
             </div>
@@ -1639,5 +2442,15 @@
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
     <script src="js/pages/widget-charts2.js"></script>
+    <script>
+      $(document).ready(function() {
+          // Make sure the code runs after all DOM elements have loaded
+          $('input[name="group5"]').change(function() {
+              var selectedValue = $(this).val();
+              $('.activeSelect').hide(); // Hide all content divs
+              $('#' + selectedValue).show(); // Show the selected content div
+          });
+      });
+  </script>
   </body>
 </html>

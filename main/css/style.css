@@ -36392,8 +36392,61 @@ button.btn.dropdown-toggle:after {
   font-weight: 600;
   line-height: 22px;
   text-align: center;
-  color: #02BBDD;
+  color: #02bbdd;
   border-radius: 100px;
+}
+
+.box-insight {
+  background-color: #e2ecf4;
+  border: 1px solid #eff9fb;
+  padding: 16px;
+  border-radius: 12px;
+}
+
+.active-border {
+  padding: 8px 16px;
+  border: 1px solid #e2ecf4;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+.active-border div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #00a05d;
+}
+.active-border span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #044b77;
+}
+
+.inactive-border {
+  padding: 8px 16px;
+  border: 1px solid #e2ecf4;
+  border-radius: 100px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  width: fit-content;
+}
+.inactive-border div {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #D82B47;
+}
+.inactive-border span {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+  color: #044b77;
 }
 
 /* Morris chart */
