@@ -424,22 +424,14 @@
                     class="d-flex justify-content-between align-items-center"
                   >
                     <h2 class="table-title">
-                      Grafik Performa Jadwal Konseling
+                      Grafik Kesehatan Mental Siswa
                     </h2>
-                    <div>
-                      <button
-                        class="waves-effect waves-light btn btn-success mb-5 me-3"
-                      >
-                        Minggu
-                      </button>
-                      <button
-                        class="waves-effect waves-light btn btn-light mb-5"
-                      >
-                        Bulan
-                      </button>
-                    </div>
+                    <h3 class="m-0" style="font-size: 13px; color:#5887a4">Dass21</h3>
                   </div>
-                  <div id="statistics"></div>
+                  <div
+                    id="curve_chart"
+                    style="width: 100%; height: 300px"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -921,6 +913,8 @@
     <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
     <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
     <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+    <script src="../assets/vendor_components/c3/d3.min.js"></script>
+    <script src="../assets/vendor_components/c3/c3.min.js"></script>
 
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
@@ -928,5 +922,40 @@
     <script src="js/pages/patients.js"></script>
     <script src="js/pages/dashboard2.js"></script>
     <script src="js/pages/widget-inline-charts.js"></script>
+    <script src="js/pages/c3-data.js"></script>
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
+    <script type="text/javascript">
+      google.charts.load("current", { packages: ["corechart"] });
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ["Year", "Stress", "Kecemasan", "Depresi"],
+          ["Jan", 10, 70, 40],
+          ["Feb", 70, 50, 60],
+          ["Mar", 50, 60, 40],
+          ["Apr", 20, 40, 10],
+        ]);
+
+        var options = {
+          title: "",
+          curveType: "function",
+          legend: { position: "bottom" },
+          colors: ["#75519E", "#02BBDD", "#F94F4B"],
+          chartArea: { width: "100%", },
+          hAxis: { textPosition: "in" },
+          vAxis: { textPosition: "in" },
+        };
+
+        var chart = new google.visualization.LineChart(
+          document.getElementById("curve_chart")
+        );
+
+        chart.draw(data, options);
+      }
+    </script>
   </body>
 </html>

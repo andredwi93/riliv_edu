@@ -15,6 +15,10 @@ $(function () {
             name: "Heart",
       data: [12, 22, 14, 18, 22 , 13, 17]
           },
+          {
+            name: "Fracture",            
+            data: [28, 39, 23, 36, 45, 32, 43]
+          },
         ],
           chart: {
           height: 260,

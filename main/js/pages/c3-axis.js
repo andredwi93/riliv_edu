@@ -79,7 +79,7 @@ $(function () {
 
             ]
         },
-        axis: { x: { type: "timeseries", localtime: !1, tick: { format: "%Y-%m-%d %H:%M:%S" } } },
+        axis: { x: { type: "timeseries", localtime: !1, tick: { format: "%b" } } },
         grid: { y: { show: !0 } }
     });
 	

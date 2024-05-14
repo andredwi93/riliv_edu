@@ -365,93 +365,333 @@
         <div class="container-full">
           <!-- Main content -->
           <section class="content mb-4">
-            <h1 class="table-title">Form Pelaksanaan Tes</h1>
-            <p class="table-desc m-0">
-              Silakan lengkapi informasi di bawah ini untuk melanjutkan.
-            </p>
-            <div class="mt-4 d-flex" style="gap: 24px">
-              <div style="flex: 1">
-                <div>
-                  <label for="method" class="form-label">Metode Tes</label>
-                  <select class="form-select">
-                    <option selected>Pilih Metode</option>
-                    <option value="1">Metode 1</option>
-                    <option value="2">Metode 2</option>
-                    <option value="3">Metode 3</option>
-                  </select>
-                </div>
-              </div>
-              <div style="flex: 1">
-                <div>
-                  <label for="date" class="form-label">Tanggal Mulai</label>
-                  <input type="date" class="form-control" id="date" />
-                </div>
-              </div>
-              <div style="flex: 1">
-                <div>
-                  <label for="date" class="form-label">Tanggal Berakhir</label>
-                  <input type="date" class="form-control" id="date" />
-                </div>
-              </div>
-            </div>
-            <div class="mt-4">
-              <label for="description" class="form-label">Keterangan</label>
-              <textarea
-                class="form-control"
-                placeholder="Masukkan Keterangan"
-                name="description"
-                id="description"
-                cols="30"
-                rows="10"
-              ></textarea>
-            </div>
-            <div class="mt-4 d-flex" style="gap: 24px">
-              <div style="flex: 1">
-                <div>
-                  <label class="form-label">Tahun Angkatan</label>
-                  <select class="form-select">
-                    <option selected>Pilih Tahun Angkatan</option>
-                    <option value="1">2020</option>
-                    <option value="2">2021</option>
-                    <option value="3">2022</option>
-                  </select>
-                </div>
-              </div>
-              <div style="flex: 1">
-                <div>
-                  <label class="form-label">Kelas</label>
-                  <select class="form-select">
-                    <option selected>Pilih Kelas</option>
-                    <option value="1">X</option>
-                    <option value="2">XI</option>
-                    <option value="3">XII</option>
-                  </select>
-                </div>
-              </div>
-              <div style="flex: 1">
-                <div>
-                  <label class="form-label">Siswa</label>
-                  <select class="form-select">
-                    <option selected>Pilih Siswa</option>
-                    <option value="1">Siswa</option>
-                    <option value="2">Siswa I</option>
-                    <option value="3">Siswa II</option>
-                  </select>
-                </div>
-              </div>
-            </div>
-            <div
-              class="d-flex justify-content-end"
-              style="margin-top: 42px; gap: 16px"
+            <a
+              href="detail_siswa.html"
+              class="d-flex align-items-center card-test-desc"
+              style="gap: 16px; color: #5887a4 !important"
             >
-              <a href="student_test.html" class="outline-purple">Kembali</a>
-              <button
-                class="secondary-purple"
-                data-bs-toggle="modal"
-                data-bs-target="#modal-center"
+              <i
+                class="mdi mdi-arrow-left"
+                style="font-size: 24px; color: #5887a4"
+              ></i>
+              <span>Kembali</span>
+            </a>
+            <div
+              class="box-body pt-0 pb-0 px-0 d-flex justify-content-between align-items-center mt-3"
+            >
+              <div>
+                <h4 class="title-progress">
+                  Detail Hasil Tes Kesehatan Mental ke-1
+                </h4>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div
+                    class="d-flex align-items-center"
+                    style="flex: 1; gap: 8px"
+                  >
+                    <img
+                      src="/assets/icons/custom/ic-assesment.svg"
+                      alt="time"
+                      width="20"
+                      height="20"
+                    />
+                    <span class="fw-500" style="font-size: 13px; color: #5887a4"
+                      >SRQ</span
+                    >
+                    <span style="font-size: 12px; color: #5887a4"
+                      >21 Pertanyaan</span
+                    >
+                  </div>
+                </div>
+              </div>
+              <a href="#" class="outline-purple">Unduh Hasil Tes</a>
+            </div>
+            <p style="font-size: 16px; color: #5887a4" class="fw-500 my-3">
+              Berdasarkan jawaban yang diberikan oleh siswa, berikut adalah
+              ringkasan hasil asesmen kesehatan mentalnya:
+            </p>
+
+            <div
+              class="d-flex"
+              style="
+                box-shadow: 0 2px 8px rgba(6, 61, 91, 0.12);
+                overflow: hidden;
+                border-radius: 24px;
+              "
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+                style="
+                  width: 229px;
+                  min-height: 302px;
+                  background-color: #ede9ff;
+                "
               >
-                Simpan
-              </button>
+                <h2
+                  style="
+                    font-size: 16px;
+                    color: #75519e;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+                  "
+                >
+                  Tingkat Stress
+                </h2>
+                <img
+                  src="/assets/icons/custom/stress-score.png"
+                  alt="stress-score"
+                  width="182"
+                  height="182"
+                />
+              </div>
+              <div style="flex: 1; padding: 24px">
+                <h4 class="fw-600" style="font-size: 14px; color: #75519e">
+                  Penjelasan Skor
+                </h4>
+                <p style="font-size: 12px; color: #5887a4">
+                  <span class="fw-500">Skor di bawah 15:</span> Siswa
+                  menunjukkan tingkat kesehatan mental yang baik dan mampu
+                  mengatasi stres dengan baik. Namun, penting untuk tetap
+                  memperhatikan dan memberikan dukungan jika ada tanda-tanda
+                  ketidaknyamanan yang muncul.
+                </p>
+                <p style="font-size: 12px; color: #5887a4; margin-bottom: 4px">
+                  <span class="fw-500">Skor 15 atau di atas: </span>Siswa
+                  mungkin mengalami beberapa kondisi berikut:
+                </p>
+                <ul style="padding-left: 20px">
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Kesulitan untuk tenang dan mudah cemas
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Tegang setiap saat
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Kesulitan bersantai
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Tidak ingin disentuh
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Mudah marah dan tersinggung
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Mudah terkejut
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Kerap melakukan hal kecil untuk menghilangkan stres tanpa
+                    sadar (menggigit jari, mengusap tangan)
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Tidak dapat mentoleransi keterlambatan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Membenci interupsi atau perubahan rencana
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="d-flex mt-4"
+              style="
+                box-shadow: 0 2px 8px rgba(6, 61, 91, 0.12);
+                overflow: hidden;
+                border-radius: 24px;
+              "
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+                style="
+                  width: 229px;
+                  min-height: 302px;
+                  background-color: #ede9ff;
+                "
+              >
+                <h2
+                  style="
+                    font-size: 16px;
+                    color: #75519e;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+                  "
+                >
+                  Tingkat Kecemasan
+                </h2>
+                <img
+                  src="/assets/icons/custom/anxiety-score.png"
+                  alt="stress-score"
+                  width="182"
+                  height="182"
+                />
+              </div>
+              <div style="flex: 1; padding: 24px">
+                <h4 class="fw-600" style="font-size: 14px; color: #75519e">
+                  Penjelasan Skor
+                </h4>
+                <p style="font-size: 12px; color: #5887a4">
+                  <span class="fw-500">Skor di bawah 8:</span> Siswa menunjukkan
+                  tingkat kecemasan yang normal dan mampu mengatasinya dengan
+                  baik. Namun, penting untuk tetap memperhatikan dan memberikan
+                  dukungan jika ada tanda-tanda kecemasan yang meningkat.
+                </p>
+                <p style="font-size: 12px; color: #5887a4; margin-bottom: 4px">
+                  <span class="fw-500">Skor 8 atau di atas: </span>Siswa mungkin
+                  mengalami beberapa kondisi berikut:
+                </p>
+                <ul style="padding-left: 20px">
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Mudah cemas dan yakin akan mengalami hal buruk
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Mudah gugup
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Tremor/tubuh sering menggigil ketakutan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Mulut kering
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Kesulitan bernapas
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Jantung sering berdebar
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Tangan sering berkeringat
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Khawatir akan tindakan yang akan dilakukan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Ketakutan akan kehilangan kontrol tubuh
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div
+              class="d-flex mt-4"
+              style="
+                box-shadow: 0 2px 8px rgba(6, 61, 91, 0.12);
+                overflow: hidden;
+                border-radius: 24px;
+              "
+            >
+              <div
+                class="d-flex flex-column justify-content-center align-items-center"
+                style="
+                  width: 229px;
+                  min-height: 302px;
+                  background-color: #ede9ff;
+                "
+              >
+                <h2
+                  style="
+                    font-size: 16px;
+                    color: #75519e;
+                    font-weight: 500;
+                    margin-bottom: 16px;
+                  "
+                >
+                  Tingkat Depresi
+                </h2>
+                <img
+                  src="/assets/icons/custom/stress-score.png"
+                  alt="stress-score"
+                  width="182"
+                  height="182"
+                />
+              </div>
+              <div style="flex: 1; padding: 24px">
+                <h4 class="fw-600" style="font-size: 14px; color: #75519e">
+                  Penjelasan Skor
+                </h4>
+                <p style="font-size: 12px; color: #5887a4">
+                  <span class="fw-500">Skor di bawah 10:</span> Siswa
+                  menunjukkan tingkat depresi yang normal dan mampu mengatasinya
+                  dengan baik.
+                </p>
+                <p style="font-size: 12px; color: #5887a4; margin-bottom: 4px">
+                  <span class="fw-500">Skor 10 atau di atas: </span>Siswa
+                  mungkin mengalami beberapa kondisi berikut:
+                </p>
+                <ul style="padding-left: 20px">
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Merendahkan diri sendiri Kehilangan semangat atas hal-hal
+                    yang disukai
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Galau, gundah, sedih berkepanjangan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Yakin bahwa hidup mereka sudah tidak memiliki makna lagi
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Pesimis terhadap masa depan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Kesulitan menikmati hal-hal yang biasanya menyenangkan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Kesulitan untuk berpartisipasi dalam hal-hal yang dulu
+                    diinginkan
+                  </li>
+                  <li
+                    style="font-size: 12px; color: #5887a4; margin-bottom: 4px"
+                  >
+                    Lamban dan kurangnya inisiatif bertindak
+                  </li>
+                </ul>
+              </div>
             </div>
           </section>
           <!-- /.content -->
@@ -477,14 +717,14 @@
                   text-align: center !important;
                 "
               >
-                Berhasil Menjadwalkan Tes
+                Berhasil Menambahkan Data Kelas!
               </h5>
               <p class="text-center" style="font-size: 12px; color: #5887a4">
-                Tes telah ditambahkan dan ditugaskan ke kelas terkait.
+                Data sudah ditambahkan ke Daftar Kelas.
               </p>
             </div>
             <a
-              href="student_test.html"
+              href="class_list.html"
               class="outline-purple"
               style="margin: 0 16px 16px"
               >Oke</a
@@ -506,7 +746,17 @@
     <script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+    <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+    <script src="../assets/vendor_components/dropzone/dropzone.js"></script>
+
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
+    <script src="js/pages/dashboard7.js"></script>
+    <script src="js/pages/patients.js"></script>
+    <script src="js/pages/dashboard2.js"></script>
+    <script src="js/pages/widget-inline-charts.js"></script>
   </body>
 </html>
