@@ -203,6 +203,7 @@ $(function () {
                     {
                         name:'Sedang Dikerjakan',
                         type:'bar',
+                        stack: 'data2',
                         data:[875, 845, 985, 1254, 1425,  147, 299],
                         
                     },
@@ -210,7 +211,7 @@ $(function () {
                         name:'Selesai',
                         type:'bar',
                         barWidth : 12,
-                        stack: 'data',
+                        stack: 'data3',
                         data:[654, 758, 754, 854, 1245,  147, 299]
                     },
                 ]
@@ -219,7 +220,28 @@ $(function () {
         };
         stackedbarcolumnChart.setOption(option);
 
-    var stackedbarcolumnChart = echarts.init(document.getElementById('stacked-column'));
+    // Instantiate and draw our chart, passing in some options.
+    setTimeout(function() {
+        stackedbarcolumnChart.groups([
+            ["data1", "data2", "data3"]
+        ]);
+    }, 1000);
+
+    // setTimeout(function() {
+    //     stackedColumnChart.load({
+    //         columns: [
+    //             ['data4', 100, -50, 150, 200, -300, -100]
+    //         ]
+    //     });
+    // }, 1500);
+
+    // setTimeout(function() {
+    //     stackedColumnChart.groups([
+    //         ["data1", "data2", "data3", "data4"]
+    //     ]);
+    // }, 2000);
+
+    var stackedbarcolumnChart2 = echarts.init(document.getElementById('stacked-column2'));
         var option = {
             
              // Setup grid
@@ -266,12 +288,13 @@ $(function () {
                     {
                         name:'Sedang Melakukan',
                         type:'bar',
-                        stack: 'data1',
+                        stack: 'data4',
                         data:[178, 241, 210, 147, 299, 147, 299, 210, 147, 299, 147, 299]
                     },
                     {
                         name:'Telah Menuelesaikan',
                         type:'bar',
+                        stack: 'data5',
                         data:[875, 845, 985, 1254, 1425,  147, 299, 210, 147, 299, 147, 299],
                         
                     },
@@ -279,28 +302,27 @@ $(function () {
                 // Add series
                 
         };
-        stackedbarcolumnChart.setOption(option);
+        stackedbarcolumnChart2.setOption(option);
 
-    // Instantiate and draw our chart, passing in some options.
     setTimeout(function() {
-        stackedColumnChart.groups([
-            ["data1", "data2", "data3"]
+        stackedbarcolumnChart2.groups([
+            ["data4", "data5"]
         ]);
     }, 1000);
 
-    setTimeout(function() {
-        stackedColumnChart.load({
-            columns: [
-                ['data4', 100, -50, 150, 200, -300, -100]
-            ]
-        });
-    }, 1500);
+    // setTimeout(function() {
+    //     stackedColumnChart2.load({
+    //         columns: [
+    //             ['data4', 100, -50, 150, 200, -300, -100]
+    //         ]
+    //     });
+    // }, 1500);
 
-    setTimeout(function() {
-        stackedColumnChart.groups([
-            ["data1", "data2", "data3", "data4"]
-        ]);
-    }, 2000);
+    // setTimeout(function() {
+    //     stackedColumnChart2.groups([
+    //         ["data4", "data5"]
+    //     ]);
+    // }, 2000);
 	
     
   });
