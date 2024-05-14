@@ -18,9 +18,9 @@
         -moz-transition: -moz-transform .3s ease-in-out, width .3s ease-in-out;
         -o-transition: -o-transform .3s ease-in-out, width .3s ease-in-out;
         transition: transform .3s ease-in-out, width .3s ease-in-out;
-        background: $wrapper;
+        background: #F9F7FF;
         border-top-right-radius: 0px;
-        border-bottom: 1px solid rgba($wrapper,1);
+        border-bottom: 1px solid rgba(#F9F7FF,1);
     }
     .push-btn, .full-screen, .svg-bt-icon{
         height: 45px;

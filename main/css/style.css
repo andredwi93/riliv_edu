@@ -21859,9 +21859,9 @@ Height property
   -moz-transition: -moz-transform 0.3s ease-in-out, width 0.3s ease-in-out;
   -o-transition: -o-transform 0.3s ease-in-out, width 0.3s ease-in-out;
   transition: transform 0.3s ease-in-out, width 0.3s ease-in-out;
-  background: #EFF9FB;
+  background: #F9F7FF;
   border-top-right-radius: 0px;
-  border-bottom: 1px solid #eff9fb;
+  border-bottom: 1px solid #f9f7ff;
 }
 .main-header .push-btn, .main-header .full-screen, .main-header .svg-bt-icon {
   height: 45px;

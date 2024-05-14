@@ -171,7 +171,7 @@ $(function () {
 
                 // Add legend
                 legend: {
-                    data: [  'Rendah', 'Menengah', 'Tinggi']
+                    data: [  'Dijadwalkan', 'Sedang Dikerjakan', 'Selesai']
                 },
 
                 // Add custom colors
@@ -183,7 +183,7 @@ $(function () {
                 // Horizontal axis
                 xAxis: [{
                     type: 'category',
-                    data: ['Perilaku', 'Hiperaktivitas', 'Emosional', 'Teman Sebaya', 'Pro-Sosial']
+                    data: ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli']
                 }],
 
                 // Vertical axis
@@ -195,23 +195,85 @@ $(function () {
                 series : [
                     
                     {
-                        name:'Rendah',
+                        name:'Dijadwalkan',
                         type:'bar',
                         stack: 'data1',
-                        data:[178, 241, 210, 147, 299]
+                        data:[178, 241, 210, 147, 299, 147, 299]
                     },
                     {
-                        name:'Menengah',
+                        name:'Sedang Dikerjakan',
                         type:'bar',
-                        data:[875, 845, 985, 1254, 1425],
+                        data:[875, 845, 985, 1254, 1425,  147, 299],
                         
                     },
                     {
-                        name:'Tinggi',
+                        name:'Selesai',
                         type:'bar',
                         barWidth : 12,
                         stack: 'data',
-                        data:[654, 758, 754, 854, 1245]
+                        data:[654, 758, 754, 854, 1245,  147, 299]
+                    },
+                ]
+                // Add series
+                
+        };
+        stackedbarcolumnChart.setOption(option);
+
+    var stackedbarcolumnChart = echarts.init(document.getElementById('stacked-column'));
+        var option = {
+            
+             // Setup grid
+                grid: {
+                    x: 40,
+                    x2: 40,
+                    y: 45,
+                    y2: 25
+                },
+
+                // Add tooltip
+                tooltip : {
+                    trigger: 'axis',
+                    axisPointer : {            // Axis indicator axis trigger effective
+                        type : 'shadow'        // The default is a straight line, optionally: 'line' | 'shadow'
+                    }
+                },
+
+                // Add legend
+                legend: {
+                    data: [  'Sedang Melakukan', 'Telah Menuelesaikan']
+                },
+
+                // Add custom colors
+                color: ['#FF8000', '#338BCB'],
+
+                // Enable drag recalculate
+                calculable: true,
+
+                // Horizontal axis
+                xAxis: [{
+                    type: 'category',
+                    data: ['Jan', 'Feb', 'Mar', 'Apr', 'Mei', 'Jun', 'Jul', 'Agu', 'Sep', 'Okt', 'Nov', 'Des']
+                }],
+
+                // Vertical axis
+                yAxis: [{
+                    type: 'value',
+                }],
+
+                // Add series
+                series : [
+                    
+                    {
+                        name:'Sedang Melakukan',
+                        type:'bar',
+                        stack: 'data1',
+                        data:[178, 241, 210, 147, 299, 147, 299, 210, 147, 299, 147, 299]
+                    },
+                    {
+                        name:'Telah Menuelesaikan',
+                        type:'bar',
+                        data:[875, 845, 985, 1254, 1425,  147, 299, 210, 147, 299, 147, 299],
+                        
                     },
                 ]
                 // Add series

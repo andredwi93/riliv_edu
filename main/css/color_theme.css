@@ -667,8 +667,7 @@ Theme Primary Color
 }
 
 .theme-primary.light-skin .sidebar-menu > li.active.treeview > a {
-  background-color: white;
-  color: #063D5B !important;
+  color: #75519E;
   font-weight: 700;
 }
 .theme-primary.light-skin .sidebar-menu > li.active.treeview > a > i {
@@ -732,15 +731,14 @@ Theme Primary Color
   filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 .theme-primary.light-skin .sidebar-menu > li.active {
-  background-color: rgb(255, 255, 255);
-  color: #063d5b;
+  color: #75519E;
   border-radius: 8px;
 }
 .theme-primary.light-skin .sidebar-menu > li.active > a {
   background-color: transparent;
 }
 .theme-primary.light-skin .sidebar-menu > li.active a {
-  color: #063d5b;
+  color: #75519E;
   font-weight: 600;
 }
 .theme-primary.light-skin .sidebar-menu > li.active a > i {
@@ -755,7 +753,6 @@ Theme Primary Color
   filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.active {
-  background-color: rgba(6, 61, 91, 0);
   color: #75519E;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.active a {
@@ -771,25 +768,23 @@ Theme Primary Color
   background-color: rgba(6, 61, 91, 0);
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview.active {
-  background-color: rgba(6, 61, 91, 0);
-  color: #063d5b;
+  color: #75519E;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview.active a {
-  color: #063d5b;
+  color: #75519E;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview.active a > i {
-  color: #063d5b;
+  color: #75519E;
   background-color: rgba(6, 61, 91, 0);
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview .treeview-menu li.active {
-  background-color: rgba(6, 61, 91, 0);
-  color: #063d5b;
+  color: #75519E;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview .treeview-menu li.active > a {
-  color: #063d5b;
+  color: #75519E;
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview .treeview-menu li.active > a > i {
-  color: #063d5b;
+  color: #75519E;
   background-color: rgba(6, 61, 91, 0);
 }
 .theme-primary.light-skin .sidebar-menu > li.active .treeview-menu li.treeview .treeview-menu li a {
@@ -831,7 +826,6 @@ Theme Primary Color
   filter: invert(0.7) sepia(1) saturate(14) hue-rotate(195deg);
 }
 .theme-primary.dark-skin .sidebar-menu > li.active .treeview-menu li.active {
-  background-color: rgba(6, 61, 91, 0);
   color: white;
 }
 .theme-primary.dark-skin .sidebar-menu > li.active .treeview-menu li.active > a {
@@ -844,7 +838,6 @@ Theme Primary Color
 
 @media (min-width: 768px) {
   .sidebar-mini.sidebar-collapse .sidebar-menu > li.active.menu-open {
-    background-color: rgba(6, 61, 91, 0.2);
     color: #063d5b;
   }
 }

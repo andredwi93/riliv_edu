@@ -238,23 +238,13 @@
                       >
                     </li>
                     <li>
-                      <a href="counseling_activity.html"
-                        ><i>
-                          <img
-                            src="../assets/icons/custom/bullet.svg"
-                            alt="ic-dashboard"
-                          /> </i
-                        >Aktivitas Konseling</a
-                      >
-                    </li>
-                    <li>
                       <a href="journey_activity.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
                             alt="ic-dashboard"
                           /> </i
-                        >Aktivitas Journey</a
+                        >Aktivitas Journal</a
                       >
                     </li>
                   </ul>
@@ -295,7 +285,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="treeview">
+                <!-- <li class="treeview">
                   <a href="#">
                     <i>
                       <img
@@ -341,6 +331,17 @@
                     </i>
                     <span>Kotak Curhat</span>
                   </a>
+                </li> -->
+                <li>
+                  <a href="counseling_note.html">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/counseling.svg"
+                        alt="ic-counseling"
+                      />
+                    </i>
+                    <span>Catatan Konseling</span>
+                  </a>
                 </li>
                 <li>
                   <a href="setting.html">
@@ -373,540 +374,356 @@
                 class="mdi mdi-arrow-left"
                 style="font-size: 24px; color: #5887a4"
               ></i>
-              <span>Kembali</span>
+              <span style="font-size: 16px; color: #5887a4 !important"
+                >Kembali</span
+              >
             </a>
             <div class="row mt-3">
-              <h2 class="table-title text-center fw-600" style="font-size: 18px !important;">
+              <h2
+                class="table-title text-center fw-600"
+                style="font-size: 18px !important"
+              >
                 Ringkasan Analisis Kelas X MIPA 1
               </h2>
-              <div class="box-insight my-4">
+              <div class="box-insight mt-4">
                 <h1 class="table-title">Filter Berdasarkan Kebutuhan Anda</h1>
                 <p class="table-desc m-0">
-                  Terapkan filter untuk menampilkan data sesuai kebutuhan Anda berdasarkan kategori yang tersedia
+                  Terapkan filter untuk menampilkan data sesuai kebutuhan Anda
+                  berdasarkan kategori yang tersedia
                 </p>
                 <div class="row align-items-center mt-3">
                   <div class="col-md-10 col-12">
                     <div class="row">
                       <div class="col-md-9 col-12">
-                        <select class="form-select" aria-label="select gender">
-                          <option selected>Aktivitas Tes</option>
-                          <option value="1">Tes 1</option>
-                          <option value="2">Tes 2</option>
-                          <option value="3">Tes 3</option>
-                          <option value="4">Tes 4</option>
+                        <select
+                          class="form-select"
+                          aria-label="select gender"
+                          id="activitySelector"
+                        >
+                          <option selected value="activityTest">
+                            Aktivitas Tes
+                          </option>
+                          <option value="activityJournal">
+                            Aktivitas Journal
+                          </option>
                         </select>
                       </div>
                       <div class="col-md-3 col-12">
-                        <input type="date" name="date" id="date" class="form-control">
+                        <input
+                          type="date"
+                          name="date"
+                          id="date"
+                          class="form-control"
+                        />
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-2 col-12" style="text-align: right;">
-                    <button class="primary-custom-btn border-0" style="padding: 8px 16px;">Terapkan</button>
-                  </div>
-                </div>
-              </div>
-              <div class="row px-0">
-                <div class="row mb-3" style="padding-right: 0 !important;">
-                  <div class="col-md-8">
-                    <h2 class="table-title">Total Aktivitas Seluruh Murid </h2>
-                  </div>
-                  <div class="col-md-4" style="padding-right: 0 !important;">
-                    <select class="form-select" aria-label="select kelas">
-                      <option selected>Indikator Pengukuran</option>
-                      <option value="1">Sosiometri</option>
-                      <option value="2">AUM</option>
-                      <option value="3">DCM</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card-purple">
-                    <img
-                      src="../assets/icons/custom/not-test.svg"
-                      alt="icon"
-                      style="width: 60"
-                    />
-                    <div>
-                      <h5 class="card-test-title">34 Murid</h5>
-                      <p class="card-test-desc">Dijadwalkan Tes</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4">
-                  <div class="card-purple">
-                    <img
-                      src="../assets/icons/custom/ongoing-test.svg"
-                      alt="icon"
-                      style="width: 60"
-                    />
-                    <div>
-                      <h5 class="card-test-title">34 Murid</h5>
-                      <p class="card-test-desc">Sedang Melakukan Tes</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-4" style="padding-right: 0 !important;">
-                  <div class="card-purple">
-                    <img
-                      src="../assets/icons/custom/student-done.svg"
-                      alt="icon"
-                      style="width: 60"
-                    />
-                    <div>
-                      <h5 class="card-test-title">34 Murid</h5>
-                      <p class="card-test-desc">Telah Melakukan Tes</p>
-                    </div>
+                  <div class="col-md-2 col-12" style="text-align: right">
+                    <a
+                      href="insight2.html"
+                      class="primary-custom-btn border-0"
+                      style="padding: 8px 16px"
+                    >
+                      Terapkan
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="row mt-4">
-              <div class="col-12">
-                <h1 class="table-title">Ringkasan Analisis Siswa</h1>
-                <p class="table-desc m-0">
-                  Analisis semua kondisi siswa secara detail di sini.
-                </p>
-                <div class="row mt-4">
-                  <div class="col col-md-6">
-                    <div class="mb-3">
-                      <input
-                        type="search"
-                        class="form-control"
-                        id="search"
-                        placeholder="Cari nama kelas di sini..."
+
+            <div id="activityTest">
+              <div class="row mt-4">
+                <div class="row px-0">
+                  <div class="row mb-3" style="padding-right: 0 !important">
+                    <div class="col-md-8">
+                      <h2 class="table-title">Total Aktivitas Seluruh Murid</h2>
+                    </div>
+                    <div class="col-md-4" style="padding-right: 0 !important">
+                      <select class="form-select" aria-label="select kelas">
+                        <option selected>Indikator Pengukuran</option>
+                        <option value="1">Sosiometri</option>
+                        <option value="2">AUM</option>
+                        <option value="3">DCM</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="card-purple">
+                      <img
+                        src="../assets/icons/custom/not-test.svg"
+                        alt="icon"
+                        style="width: 60"
                       />
-                    </div>
-                  </div>
-                  <div class="col col-md-6">
-                    <div class="row">
-                      <div class="col col-md-4">
-                        <select class="form-select" aria-label="select gender">
-                          <option selected>Angkatan</option>
-                          <option value="1">2000</option>
-                          <option value="2">2001</option>
-                          <option value="2">2002</option>
-                          <option value="2">2003</option>
-                        </select>
-                      </div>
-                      <div class="col col-md-4">
-                        <select class="form-select" aria-label="select kelas">
-                          <option selected>Kelas</option>
-                          <option value="1">X</option>
-                          <option value="2">XI</option>
-                          <option value="3">XII</option>
-                        </select>
-                      </div>
-                      <div class="col col-md-4">
-                        <select class="form-select" aria-label="select jurusan">
-                          <option selected>Jurusan</option>
-                          <option value="1">IPA</option>
-                          <option value="2">IPS</option>
-                        </select>
+                      <div>
+                        <h5 class="card-test-title">34 Murid</h5>
+                        <p class="card-test-desc">Dijadwalkan Tes</p>
                       </div>
                     </div>
                   </div>
+                  <div class="col-4">
+                    <div class="card-purple">
+                      <img
+                        src="../assets/icons/custom/ongoing-test.svg"
+                        alt="icon"
+                        style="width: 60"
+                      />
+                      <div>
+                        <h5 class="card-test-title">34 Murid</h5>
+                        <p class="card-test-desc">Sedang Melakukan Tes</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-4" style="padding-right: 0 !important">
+                    <div class="card-purple">
+                      <img
+                        src="../assets/icons/custom/student-done.svg"
+                        alt="icon"
+                        style="width: 60"
+                      />
+                      <div>
+                        <h5 class="card-test-title">34 Murid</h5>
+                        <p class="card-test-desc">Telah Melakukan Tes</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="table-responsive">
-                  <table class="table">
-                    <thead style="background-color: rgba(240, 245, 249, 0.5)">
-                      <tr style="font-size: 12px; color: #abc3d2">
-                        <th>NOMOR INDUK SISWA</th>
-                        <th>NAMA LENGKAP</th>
-                        <th>EMAIL</th>
-                        <th>AKSI</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr style="font-size: 13px; color: #5887a4">
-                        <td>#p245879</td>
-                        <td>Rival Syah</td>
-                        <td>rivalsyah@gmail.com</td>
-                        <td class="py-4">
-                          <a href="detail_siswa.html">
-                            <img
-                              src="/assets/icons/custom/ic-detail.svg"
-                              alt="ic-detail"
-                            />
-                          </a>
-                        </td>
-                      </tr>
-                      <tr style="font-size: 13px; color: #5887a4">
-                        <td>#p245879</td>
-                        <td>Budi Sudarsono</td>
-                        <td>budi@gmail.com</td>
-                        <td class="py-4">
-                          <a href="detail_siswa_2.html">
-                            <img
-                              src="/assets/icons/custom/ic-detail.svg"
-                              alt="ic-detail"
-                            />
-                          </a>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3">
-              <div class="col col-md-4">
-                <div
-                  style="
-                    border: 1px solid #e2ecf4;
-                    border-radius: 12px;
-                    padding: 24px;
-                  "
-                >
-                  <h2 class="table-title">Gender</h2>
-                  <div id="donut-chart"></div>
-                </div>
-              </div>
-              <div class="col col-md-8">
-                <div
-                  class="analytics-info"
-                  style="
-                    border: 1px solid #e2ecf4;
-                    border-radius: 12px;
-                    padding: 24px;
-                  "
-                >
-                  <h4 class="table-title">
-                    Presentase Masalah yang Memicu Siswa Setiap Tahun
-                  </h4>
-                  <p
-                    class="m-0"
-                    style="font-size: 13px; line-height: 20px; color: #5887a4"
-                  >
-                    Tahun 2010 - 2018
+                <div class="col-12 mt-4">
+                  <h1 class="table-title">Ringkasan Analisis Siswa</h1>
+                  <p class="table-desc m-0">
+                    Analisis semua kondisi siswa secara detail di sini.
                   </p>
+                  <!-- <div class="row mt-4">
+                    <div class="col col-md-6">
+                      <div class="mb-3">
+                        <input
+                          type="search"
+                          class="form-control"
+                          id="search"
+                          placeholder="Cari nama kelas di sini..."
+                        />
+                      </div>
+                    </div>
+                    <div class="col col-md-6">
+                      <div class="row">
+                        <div class="col col-md-4">
+                          <select class="form-select" aria-label="select gender">
+                            <option selected>Angkatan</option>
+                            <option value="1">2000</option>
+                            <option value="2">2001</option>
+                            <option value="2">2002</option>
+                            <option value="2">2003</option>
+                          </select>
+                        </div>
+                        <div class="col col-md-4">
+                          <select class="form-select" aria-label="select kelas">
+                            <option selected>Kelas</option>
+                            <option value="1">X</option>
+                            <option value="2">XI</option>
+                            <option value="3">XII</option>
+                          </select>
+                        </div>
+                        <div class="col col-md-4">
+                          <select class="form-select" aria-label="select jurusan">
+                            <option selected>Jurusan</option>
+                            <option value="1">IPA</option>
+                            <option value="2">IPS</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </div> -->
+                  <div class="table-responsive mt-4">
+                    <table class="table">
+                      <thead style="background-color: rgba(240, 245, 249, 0.5)">
+                        <tr style="font-size: 12px; color: #abc3d2">
+                          <th>NOMOR INDUK SISWA</th>
+                          <th>NAMA LENGKAP</th>
+                          <th>EMAIL</th>
+                          <th>AKSI</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr style="font-size: 13px; color: #5887a4">
+                          <td>#p245879</td>
+                          <td>Rival Syah</td>
+                          <td>rivalsyah@gmail.com</td>
+                          <td class="py-4">
+                            <a href="detail_siswa.html">
+                              <img
+                                src="/assets/icons/custom/ic-detail.svg"
+                                alt="ic-detail"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                        <tr style="font-size: 13px; color: #5887a4">
+                          <td>#p245879</td>
+                          <td>Budi Sudarsono</td>
+                          <td>budi@gmail.com</td>
+                          <td class="py-4">
+                            <a href="detail_siswa_2.html">
+                              <img
+                                src="/assets/icons/custom/ic-detail.svg"
+                                alt="ic-detail"
+                              />
+                            </a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col col-md-4">
                   <div
-                    class="mt-2"
-                    id="stacked-column"
-                    style="height: 290px"
-                  ></div>
+                    style="
+                      border: 1px solid #e2ecf4;
+                      border-radius: 12px;
+                      padding: 24px;
+                    "
+                  >
+                    <h2 class="table-title">Jenis Kelamin</h2>
+                    <div id="donut-chart"></div>
+                  </div>
+                </div>
+                <div class="col col-md-8">
+                  <div
+                    class="analytics-info"
+                    style="
+                      border: 1px solid #e2ecf4;
+                      border-radius: 12px;
+                      padding: 24px;
+                    "
+                  >
+                    <h4 class="table-title">
+                      Presentase Tes Kesehatan Mental Siswa Setiap Tahun
+                    </h4>
+                    <p
+                      class="m-0"
+                      style="font-size: 13px; line-height: 20px; color: #5887a4"
+                    >
+                      Tahun 2023
+                    </p>
+                    <div
+                      class="mt-2"
+                      id="stacked-column"
+                      style="height: 290px"
+                    ></div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-6">
-                <div class="card-healthy">
-                  <h2 class="table-title">
-                    Rata-rata Penyebab dan Kondisi Kesehatan Murid
-                  </h2>
-                  <hr />
-                  <div class="d-flex flex-column" style="gap: 20px">
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Perilaku</h5>
-                        <div>
-                          <h5 class="table-title">
-                            32% <span>(11 kasus)</span>
-                          </h5>
+              <div class="row mt-4">
+                <div class="col-12">
+                  <div class="card-healthy">
+                    <h2 class="table-title">
+                      Rata-rata Penyebab dan Kondisi Akademik Murid
+                    </h2>
+                    <p
+                      style="font-size: 13px; line-height: 20px; color: #5887a4"
+                    >
+                      Berdasarkan indikator pengukuran
+                      <span class="fw-700">Dass21</span>
+                    </p>
+                    <hr />
+                    <div class="d-flex flex-column" style="gap: 20px">
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <h5 class="title-progress">Tingkat Stress</h5>
+                          <div>
+                            <h5 class="table-title">
+                              32% <span>(11 kasus)</span>
+                            </h5>
+                          </div>
+                        </div>
+                        <div
+                          class="progress mb-0"
+                          style="
+                            background-color: #e2ecf4 !important;
+                            height: 8px;
+                          "
+                        >
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Basic example"
+                            style="
+                              width: 32%;
+                              background-color: #02b8d9 !important;
+                            "
+                            aria-valuenow="32"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
                         </div>
                       </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <h5 class="title-progress">Tingkat Kecemasan</h5>
+                          <div>
+                            <h5 class="table-title">
+                              28% <span>(11 kasus)</span>
+                            </h5>
+                          </div>
+                        </div>
                         <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
+                          class="progress mb-0"
                           style="
-                            width: 32%;
-                            background-color: #02b8d9 !important;
+                            background-color: #e2ecf4 !important;
+                            height: 8px;
                           "
-                          aria-valuenow="32"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Hiperaktivitas</h5>
-                        <div>
-                          <h5 class="table-title">
-                            28% <span>(11 kasus)</span>
-                          </h5>
+                        >
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Basic example"
+                            style="
+                              width: 28%;
+                              background-color: #02b8d9 !important;
+                            "
+                            aria-valuenow="28"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
                         </div>
                       </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 28%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="28"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Emosional</h5>
-                        <div>
-                          <h5 class="table-title">5% <span>(2 kasus)</span></h5>
+                      <div>
+                        <div class="d-flex justify-content-between mb-2">
+                          <h5 class="title-progress">Tingkat Depresi</h5>
+                          <div>
+                            <h5 class="table-title">
+                              5% <span>(2 kasus)</span>
+                            </h5>
+                          </div>
                         </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
                         <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
+                          class="progress mb-0"
                           style="
-                            width: 5%;
-                            background-color: #02b8d9 !important;
+                            background-color: #e2ecf4 !important;
+                            height: 8px;
                           "
-                          aria-valuenow="5"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Teman Sebaya</h5>
-                        <div>
-                          <h5 class="table-title">
-                            20% <span>(11 kasus)</span>
-                          </h5>
+                        >
+                          <div
+                            class="progress-bar"
+                            role="progressbar"
+                            aria-label="Basic example"
+                            style="
+                              width: 5%;
+                              background-color: #02b8d9 !important;
+                            "
+                            aria-valuenow="5"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                          ></div>
                         </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 20%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="20"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Pro-sosial</h5>
-                        <div>
-                          <h5 class="table-title">
-                            15% <span>(11 kasus)</span>
-                          </h5>
-                        </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 15%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="15"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <div class="col-6"></div>
               </div>
-              <div class="col-6">
-                <div class="card-healthy">
-                  <h2 class="table-title">
-                    Rata-rata Penyebab dan Kondisi Akademik Murid
-                  </h2>
-                  <hr />
-                  <div class="d-flex flex-column" style="gap: 20px">
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Demotivation</h5>
-                        <div>
-                          <h5 class="table-title">
-                            32% <span>(11 kasus)</span>
-                          </h5>
-                        </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 32%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="32"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Sulit Konsentransi</h5>
-                        <div>
-                          <h5 class="table-title">
-                            28% <span>(11 kasus)</span>
-                          </h5>
-                        </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 28%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="28"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Sulit Memahami</h5>
-                        <div>
-                          <h5 class="table-title">5% <span>(2 kasus)</span></h5>
-                        </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 5%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="5"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Ketidakhadiran</h5>
-                        <div>
-                          <h5 class="table-title">
-                            20% <span>(11 kasus)</span>
-                          </h5>
-                        </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 20%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="20"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                    <div>
-                      <div class="d-flex justify-content-between mb-2">
-                        <h5 class="title-progress">Lainnya</h5>
-                        <div>
-                          <h5 class="table-title">
-                            15% <span>(11 kasus)</span>
-                          </h5>
-                        </div>
-                      </div>
-                      <div
-                        class="progress mb-0"
-                        style="
-                          background-color: #e2ecf4 !important;
-                          height: 8px;
-                        "
-                      >
-                        <div
-                          class="progress-bar"
-                          role="progressbar"
-                          aria-label="Basic example"
-                          style="
-                            width: 15%;
-                            background-color: #02b8d9 !important;
-                          "
-                          aria-valuenow="15"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-6"></div>
             </div>
+            
           </section>
           <!-- /.content -->
         </div>
@@ -941,5 +758,15 @@
     <script src="js/pages/dashboard.js"></script>
     <script src="js/pages/dashboard2.js"></script>
     <script src="js/pages/c3-bar-pie.js"></script>
+    <!-- <script src="js/pages/bar-pie.js"></script> -->
+    <script>
+      $(document).ready(function () {
+        // Make sure the code runs after all DOM elements have loaded
+        $("#activitySelector").change(function () {
+          $(".show").hide(); // Hide all color divs
+          $("#" + $(this).val()).show(); // Show the selected color div
+        });
+      });
+    </script>
   </body>
 </html>

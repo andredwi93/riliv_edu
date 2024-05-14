@@ -365,110 +365,109 @@
         <div class="container-full">
           <!-- Main content -->
           <section class="content mb-4">
-            <h1 class="table-title">Ringkasan Analisis Siswa</h1>
-            <p class="table-desc m-0">
-              Analisis semua kondisi siswa secara detail di sini.
-            </p>
-            <div class="row mt-4">
-              <div class="col col-md-5">
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <h1 class="main-title m-0">Daftar Catatan</h1>
+                <p class="main-desc m-0">
+                  Tambahkan catatan dan berikan saran untuk membantu siswa
+                  mengatasi masalah mereka.
+                </p>
+              </div>
+              <a href="add_note.html" class="outline-purple">Tambah Catatan</a>
+            </div>
+            <div class="row mt-3">
+              <div class="col col-md-9">
                 <div class="mb-3">
                   <input
                     type="search"
                     class="form-control"
                     id="search"
-                    placeholder="Cari ID tes di sini..."
+                    placeholder="Cari nama siswa di sini..."
                   />
                 </div>
               </div>
-              <div class="col col-md-7">
+              <div class="col col-md-3">
                 <div class="row">
-                  <div class="col col-md-4">
-                    <input class="form-control" type="date" name="date" id="date">
-                  </div>
-                  <div class="col col-md-4">
-                    <select class="form-select" aria-label="select kelas">
-                      <option selected>Indikator Pengukuran</option>
-                      <option value="1">Sosiometri</option>
-                      <option value="2">AUM</option>
-                      <option value="3">DCM</option>
-                    </select>
-                  </div>
-                  <div class="col col-md-4">
-                    <select class="form-select" aria-label="select jurusan">
-                      <option selected>Kelas</option>
-                      <option value="1">X</option>
-                      <option value="2">XI</option>
-                      <option value="3">XII</option>
-                    </select>
+                  <div class="col">
+                    <input type="date" name="" id="" class="form-control" />
                   </div>
                 </div>
               </div>
-              <div class="table-responsive">
-                <table class="table">
-                  <thead style="background-color: rgba(240, 245, 249, 0.5)">
-                    <tr style="font-size: 12px; color: #abc3d2">
-                      <th>KELAS</th>
-                      <th>TANGGAL</th>
-                      <th>INDIKATOR PENGUKURAN</th>
-                      <th>AKSI</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>X MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XI MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight2.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XII MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight3.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XII MIPA 2</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight4.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
+            </div>
+            <div class="table-responsive">
+              <table class="table">
+                <thead style="background-color: rgba(240, 245, 249, 0.5)">
+                  <tr style="font-size: 12px; color: #abc3d2">
+                    <th style="width: 200px;">TANGGAL</th>
+                    <th style="width: 200px;">NAMA LENGKAP</th>
+                    <th>MASALAH</th>
+                    <th>SOLUSI/TINDAKAN</th>
+                    <th>AKSI</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr style="font-size: 13px; color: #5887a4">
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>Aaliyah Clark</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                      urna erat amet tempor imperdiet pretium nisl magnis.
+                    </td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                      urna erat amet tempor imperdiet pretium nisl magnis.
+                    </td>
+                    <td class="py-4">
+                      <a href="detail_note.html">
+                        <img
+                          src="/assets/icons/custom/ic-detail.svg"
+                          alt="ic-detail"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr style="font-size: 13px; color: #5887a4">
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>Rival Clark</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                      urna erat amet tempor imperdiet pretium nisl magnis.
+                    </td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                      urna erat amet tempor imperdiet pretium nisl magnis.
+                    </td>
+                    <td class="py-4">
+                      <a href="detail_note.html">
+                        <img
+                          src="/assets/icons/custom/ic-detail.svg"
+                          alt="ic-detail"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                  <tr style="font-size: 13px; color: #5887a4">
+                    <td>14 April 2021, 10:30 AM</td>
+                    <td>Jhon Clark</td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                      urna erat amet tempor imperdiet pretium nisl magnis.
+                    </td>
+                    <td>
+                      Lorem ipsum dolor sit amet consectetur. Id scelerisque
+                      urna erat amet tempor imperdiet pretium nisl magnis.
+                    </td>
+                    <td class="py-4">
+                      <a href="detail_note.html">
+                        <img
+                          src="/assets/icons/custom/ic-detail.svg"
+                          alt="ic-detail"
+                        />
+                      </a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </section>
           <!-- /.content -->
@@ -490,7 +489,16 @@
     <script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+    <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
+    <script src="js/pages/dashboard7.js"></script>
+    <script src="js/pages/patients.js"></script>
+    <script src="js/pages/dashboard2.js"></script>
+    <script src="js/pages/widget-inline-charts.js"></script>
   </body>
 </html>

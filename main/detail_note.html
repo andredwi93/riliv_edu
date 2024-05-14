@@ -364,113 +364,147 @@
       <div class="content-wrapper">
         <div class="container-full">
           <!-- Main content -->
-          <section class="content mb-4">
-            <h1 class="table-title">Ringkasan Analisis Siswa</h1>
-            <p class="table-desc m-0">
-              Analisis semua kondisi siswa secara detail di sini.
-            </p>
-            <div class="row mt-4">
-              <div class="col col-md-5">
-                <div class="mb-3">
-                  <input
-                    type="search"
-                    class="form-control"
-                    id="search"
-                    placeholder="Cari ID tes di sini..."
-                  />
-                </div>
-              </div>
-              <div class="col col-md-7">
-                <div class="row">
-                  <div class="col col-md-4">
-                    <input class="form-control" type="date" name="date" id="date">
-                  </div>
-                  <div class="col col-md-4">
-                    <select class="form-select" aria-label="select kelas">
-                      <option selected>Indikator Pengukuran</option>
-                      <option value="1">Sosiometri</option>
-                      <option value="2">AUM</option>
-                      <option value="3">DCM</option>
+          <section class="content">
+            <div>
+              <h1 class="main-title m-0">Detail Catatan Konseling</h1>
+              <p class="main-desc m-0">
+                Lengkapi informasi ini untuk menambahkan catatan dari sesi
+                konseling.
+              </p>
+            </div>
+            <div id="newForm" class="mt-4">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="name" class="form-label label-curhat"
+                      >Tahun Angkatan
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <select name="Platform" class="form-select" disabled>
+                      <option selected>2023</option>
                     </select>
                   </div>
-                  <div class="col col-md-4">
-                    <select class="form-select" aria-label="select jurusan">
-                      <option selected>Kelas</option>
-                      <option value="1">X</option>
-                      <option value="2">XI</option>
-                      <option value="3">XII</option>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="name" class="form-label label-curhat"
+                      >Kelas <span style="color: #d82b47">*</span></label
+                    >
+                    <select name="Platform" class="form-select" disabled>
+                      <option selected>XII</option>
                     </select>
                   </div>
                 </div>
               </div>
-              <div class="table-responsive">
-                <table class="table">
-                  <thead style="background-color: rgba(240, 245, 249, 0.5)">
-                    <tr style="font-size: 12px; color: #abc3d2">
-                      <th>KELAS</th>
-                      <th>TANGGAL</th>
-                      <th>INDIKATOR PENGUKURAN</th>
-                      <th>AKSI</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>X MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XI MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight2.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XII MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight3.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XII MIPA 2</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight4.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="nama" class="form-label label-curhat"
+                      >Nama Lengkap <span style="color: #d82b47">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama"
+                      placeholder="Masukkan Nama Lengkap"
+                      value="Rival Syah"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="name" class="form-label label-curhat"
+                      >Jenis Kelamin
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <select name="Platform" class="form-select" disabled>
+                      <option selected>Laki-laki</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="tanggal" class="form-label label-curhat"
+                      >Tanggal Mulai
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="tanggal"
+                      value="2023-01-01"
+                      disabled
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="tanggalend" class="form-label label-curhat"
+                      >Tanggal Berakhir
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <input
+                      type="date"
+                      class="form-control"
+                      id="tanggalend"
+                      value="2023-01-05"
+                      disabled
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="problem" class="form-label label-curhat"
+                      >Masalah yang Dialami Siswa
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <textarea
+                      name="problem"
+                      id="problem"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Ketik disini"
+                      disabled
+                    >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit explicabo corrupti nihil, eos nobis nam cum molestiae modi aliquid cupiditate facere assumenda velit reiciendis voluptatem consequuntur animi quam, maiores recusandae?</textarea
+                    >
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="solution" class="form-label label-curhat"
+                      >Saran yang Diberikan
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <textarea
+                      name="solution"
+                      id="solution"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Ketik disini"
+                      disabled
+                    >
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt eius consectetur dolorum qui quasi deleniti saepe ipsam voluptate eveniet tempore accusamus dolores nobis repellat ut commodi laboriosam veritatis, quis sunt.</textarea
+                    >
+                  </div>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-end"
+                style="margin-top: 32px; gap: 16px"
+              >
+                <a href="counseling_note.html" class="outline-purple"
+                  >Kembali</a
+                >
               </div>
             </div>
           </section>
+
           <!-- /.content -->
         </div>
       </div>
@@ -490,7 +524,17 @@
     <script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+    <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+    <script src="../assets/vendor_components/dropzone/dropzone.js"></script>
+
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
+    <script src="js/pages/dashboard7.js"></script>
+    <script src="js/pages/patients.js"></script>
+    <script src="js/pages/dashboard2.js"></script>
+    <script src="js/pages/widget-inline-charts.js"></script>
   </body>
 </html>

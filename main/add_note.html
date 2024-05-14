@@ -364,38 +364,38 @@
       <div class="content-wrapper">
         <div class="container-full">
           <!-- Main content -->
-          <section class="content mb-4">
-            <h1 class="table-title">Ringkasan Analisis Siswa</h1>
-            <p class="table-desc m-0">
-              Analisis semua kondisi siswa secara detail di sini.
-            </p>
-            <div class="row mt-4">
-              <div class="col col-md-5">
-                <div class="mb-3">
-                  <input
-                    type="search"
-                    class="form-control"
-                    id="search"
-                    placeholder="Cari ID tes di sini..."
-                  />
-                </div>
-              </div>
-              <div class="col col-md-7">
-                <div class="row">
-                  <div class="col col-md-4">
-                    <input class="form-control" type="date" name="date" id="date">
-                  </div>
-                  <div class="col col-md-4">
-                    <select class="form-select" aria-label="select kelas">
-                      <option selected>Indikator Pengukuran</option>
-                      <option value="1">Sosiometri</option>
-                      <option value="2">AUM</option>
-                      <option value="3">DCM</option>
+          <section class="content">
+            <div>
+              <h1 class="main-title m-0">Detail Catatan Konseling</h1>
+              <p class="main-desc m-0">
+                Lengkapi informasi ini untuk menambahkan catatan dari sesi
+                konseling.
+              </p>
+            </div>
+            <div id="newForm" class="mt-4">
+              <div class="row">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="name" class="form-label label-curhat"
+                      >Tahun Angkatan
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <select name="Platform" class="form-select">
+                      <option selected>Pilih Tahun Angkatan</option>
+                      <option value="1">2020</option>
+                      <option value="2">2021</option>
+                      <option value="3">2022</option>
+                      <option value="4">2024</option>
                     </select>
                   </div>
-                  <div class="col col-md-4">
-                    <select class="form-select" aria-label="select jurusan">
-                      <option selected>Kelas</option>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="name" class="form-label label-curhat"
+                      >Kelas <span style="color: #d82b47">*</span></label
+                    >
+                    <select name="Platform" class="form-select">
+                      <option selected>Pilih Kelas</option>
                       <option value="1">X</option>
                       <option value="2">XI</option>
                       <option value="3">XII</option>
@@ -403,79 +403,144 @@
                   </div>
                 </div>
               </div>
-              <div class="table-responsive">
-                <table class="table">
-                  <thead style="background-color: rgba(240, 245, 249, 0.5)">
-                    <tr style="font-size: 12px; color: #abc3d2">
-                      <th>KELAS</th>
-                      <th>TANGGAL</th>
-                      <th>INDIKATOR PENGUKURAN</th>
-                      <th>AKSI</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>X MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XI MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight2.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XII MIPA 1</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight3.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                    <tr style="font-size: 13px; color: #5887a4">
-                      <td>XII MIPA 2</td>
-                      <td>1 April 2023</td>
-                      <td>Sosiometri</td>
-                      <td class="py-4">
-                        <a href="insight4.html">
-                          <img
-                            src="/assets/icons/custom/ic-detail.svg"
-                            alt="ic-detail"
-                          />
-                        </a>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="nama" class="form-label label-curhat"
+                      >Nama Lengkap <span style="color: #d82b47">*</span></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="nama"
+                      placeholder="Masukkan Nama Lengkap"
+                    />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="name" class="form-label label-curhat"
+                      >Jenis Kelamin
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <select name="Platform" class="form-select">
+                      <option selected>Pilih Jenis Kelamin</option>
+                      <option value="1">Laki-laki</option>
+                      <option value="2">Perempuan</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="tanggal" class="form-label label-curhat"
+                      >Tanggal Mulai
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <input type="date" class="form-control" id="tanggal" />
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="tanggalend" class="form-label label-curhat"
+                      >Tanggal Berakhir
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <input type="date" class="form-control" id="tanggalend" />
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-3">
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="problem" class="form-label label-curhat"
+                      >Masalah yang Dialami Siswa
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <textarea
+                      name="problem"
+                      id="problem"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Ketik disini"
+                    ></textarea>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6">
+                  <div>
+                    <label for="solution" class="form-label label-curhat"
+                      >Saran yang Diberikan
+                      <span style="color: #d82b47">*</span></label
+                    >
+                    <textarea
+                      name="solution"
+                      id="solution"
+                      class="form-control"
+                      rows="5"
+                      placeholder="Ketik disini"
+                    ></textarea>
+                  </div>
+                </div>
               </div>
             </div>
+            <div
+              class="d-flex justify-content-end"
+              style="margin-top: 32px; gap: 16px"
+            >
+              <a href="counseling_note.html" class="outline-purple">Kembali</a>
+              <button
+                type="button"
+                class="secondary-purple"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-center"
+              >
+                Simpan
+              </button>
+            </div>
           </section>
+          <div class="modal center-modal fade" id="modal-center" tabindex="-1">
+            <div class="modal-dialog">
+              <div class="modal-content" style="border-radius: 16px">
+                <div class="modal-body">
+                  <div class="text-center">
+                    <img
+                      src="/assets/icons/custom/success.png"
+                      alt="success"
+                      width="153"
+                      height="100"
+                    />
+                  </div>
+                  <h5
+                    class="title-progress mt-3"
+                    style="
+                      font-weight: 600 !important;
+                      text-align: center !important;
+                    "
+                  >
+                    Berhasil Menambahkan Catatan
+                  </h5>
+                  <p
+                    class="text-center"
+                    style="font-size: 12px; color: #5887a4"
+                  >
+                    Catatan Konseling dengan Siswa telah ditambahkan
+                  </p>
+                </div>
+                <a
+                  href="counseling_note.html"
+                  class="outline-purple"
+                  style="margin: 0 16px 16px"
+                  >Oke</a
+                >
+              </div>
+            </div>
+          </div>
           <!-- /.content -->
         </div>
       </div>
       <!-- /.content-wrapper -->
-
+      
       <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
     </div>
@@ -490,7 +555,17 @@
     <script src="js/pages/chat-popup.js"></script>
     <script src="../assets/icons/feather-icons/feather.min.js"></script>
 
+    <script src="../assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="../assets/vendor_components/apexcharts-bundle/dist/apexcharts.js"></script>
+    <script src="https://rawgit.com/nnnick/Chart.js/v1.0.2/Chart.min.js"></script>
+    <script src="../assets/vendor_components/jquery-knob/js/jquery.knob.js"></script>
+    <script src="../assets/vendor_components/dropzone/dropzone.js"></script>
+
     <!-- Doclinic App -->
     <script src="js/template.js"></script>
+    <script src="js/pages/dashboard7.js"></script>
+    <script src="js/pages/patients.js"></script>
+    <script src="js/pages/dashboard2.js"></script>
+    <script src="js/pages/widget-inline-charts.js"></script>
   </body>
 </html>

@@ -238,23 +238,13 @@
                       >
                     </li>
                     <li>
-                      <a href="counseling_activity.html"
-                        ><i>
-                          <img
-                            src="../assets/icons/custom/bullet.svg"
-                            alt="ic-dashboard"
-                          /> </i
-                        >Aktivitas Konseling</a
-                      >
-                    </li>
-                    <li>
                       <a href="journey_activity.html"
                         ><i>
                           <img
                             src="../assets/icons/custom/bullet.svg"
                             alt="ic-dashboard"
                           /> </i
-                        >Aktivitas Journey</a
+                        >Aktivitas Journal</a
                       >
                     </li>
                   </ul>
@@ -295,7 +285,7 @@
                     </li>
                   </ul>
                 </li>
-                <li class="treeview">
+                <!-- <li class="treeview">
                   <a href="#">
                     <i>
                       <img
@@ -341,6 +331,17 @@
                     </i>
                     <span>Kotak Curhat</span>
                   </a>
+                </li> -->
+                <li>
+                  <a href="counseling_note.html">
+                    <i>
+                      <img
+                        src="../assets/icons/custom/counseling.svg"
+                        alt="ic-counseling"
+                      />
+                    </i>
+                    <span>Catatan Konseling</span>
+                  </a>
                 </li>
                 <li>
                   <a href="setting.html">
@@ -369,17 +370,8 @@
               <ul class="nav nav-pills mb-20">
                 <li class="nav-item">
                   <a
-                    href="#navpills2-1"
-                    class="nav-link active"
-                    data-bs-toggle="tab"
-                    aria-expanded="false"
-                    >Berikan Akses</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
                     href="#navpills2-2"
-                    class="nav-link"
+                    class="nav-link active"
                     data-bs-toggle="tab"
                     aria-expanded="false"
                     >Ubah Password</a
@@ -397,93 +389,7 @@
               </ul>
               <!-- Tab panes -->
               <div class="tab-content">
-                <div id="navpills2-1" class="tab-pane active">
-                  <div>
-                    <h1 class="main-title m-0">Berikan Akses</h1>
-                    <p class="main-desc">
-                      Lorem ipsum dolor sit amet consectetur. Augue imperdiet a
-                      justo accumsan vitae dapibus morbi. Ac a nisi convallis
-                      habitant.
-                    </p>
-                  </div>
-                  <div id="newForm">
-                    <div class="row">
-                      <div class="col-12 col-md-6">
-                        <div>
-                          <label for="email" class="form-label label-curhat"
-                            >Email <span style="color: #d82b47">*</span></label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Masukkan Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <div>
-                          <label for="name" class="form-label label-curhat"
-                            >Platform yang ingin Dibagikan</label
-                          >
-                          <select name="Platform" class="form-select">
-                            <option selected>Pilih Platform</option>
-                            <option value="1">Platform 1</option>
-                            <option value="2">Platform 2</option>
-                            <option value="3">Platform 3</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="row mt-3">
-                      <div class="col-12 col-md-6">
-                        <div>
-                          <label for="email" class="form-label label-curhat"
-                            >Email <span style="color: #d82b47">*</span></label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="email"
-                            placeholder="Masukkan Email"
-                          />
-                        </div>
-                      </div>
-                      <div class="col-12 col-md-6">
-                        <div>
-                          <label for="name" class="form-label label-curhat"
-                            >Platform yang ingin Dibagikan</label
-                          >
-                          <select name="Platform" class="form-select">
-                            <option selected>Pilih Platform</option>
-                            <option value="1">Platform 1</option>
-                            <option value="2">Platform 2</option>
-                            <option value="3">Platform 3</option>
-                          </select>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <button
-                    class="outline-purple bg-white mt-3"
-                    id="addFormButton"
-                  >
-                    Tambah Orang
-                  </button>
-                  <div
-                    class="d-flex justify-content-end"
-                    style="margin-top: 32px; gap: 16px"
-                  >
-                    <button
-                      class="secondary-purple"
-                      data-bs-toggle="modal"
-                      data-bs-target="#modal-center"
-                    >
-                      Simpan
-                    </button>
-                  </div>
-                </div>
-                <div id="navpills2-2" class="tab-pane">
+                <div id="navpills2-2" class="tab-pane active">
                   <div class="wizard-content">
                     <form action="#" class="tab-wizard wizard-circle">
                       <!-- Step 1 -->
@@ -582,7 +488,7 @@
                   <div
                     class="d-flex justify-content-between align-items-center"
                     style="
-                      background-color: #eff9fb;
+                      background-color: #F9F8FF;
                       border-radius: 24px;
                       padding: 32px;
                     "
@@ -603,7 +509,7 @@
                         </p>
                       </div>
                     </div>
-                    <a href="#" class="primary-custom-btn">Hubungi Riliv</a>
+                    <a href="#" class="secondary-purple">Hubungi Riliv</a>
                   </div>
                 </div>
               </div>

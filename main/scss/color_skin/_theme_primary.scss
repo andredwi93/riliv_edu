@@ -114,8 +114,8 @@ Theme Primary Color
             >li{
                 &.active.treeview {
                     >a{
-                        background-color: white;
-                        color: $theme-primary-primary !important;
+                        // background-color: white;
+                        color: #75519E;
                         font-weight: 700;
                         > i{
                            color: $theme-primary-primary; 
@@ -232,14 +232,14 @@ Theme Primary Color
                     }
                 }
                 &.active{
-                    background-color: rgba(255,255,255, 1);
-                    color: rgba($theme-primary-primary, 1);
+                    // background-color: rgba(255,255,255, 1);
+                    color: #75519E;
                     border-radius: 8px;
                     >a{
                         background-color: transparent;
                     }
                     a{
-                        color: rgba($theme-primary-primary, 1);
+                        color: #75519E;
                         font-weight: 600;
                         > i{
                            color: $theme-primary-primary ;
@@ -256,7 +256,7 @@ Theme Primary Color
                     }
                     .treeview-menu{
                         li.active{
-                            background-color: rgba($theme-primary-primary, 0.0);
+                            // background-color: rgba($theme-primary-primary, 0.0);
                             color: #75519E;
                             a{
                                 color: #75519E;
@@ -277,12 +277,12 @@ Theme Primary Color
                         }
                         li.treeview{
                             &.active{
-                                background-color: rgba($theme-primary-primary, 0.0);
-                                color: rgba($theme-primary-primary, 1);
+                                // background-color: rgba($theme-primary-primary, 0.0);
+                                color: #75519E;
                                 a{
-                                    color: rgba($theme-primary-primary, 1);                                
+                                    color: #75519E;                                
                                     > i{
-                                       color: rgba($theme-primary-primary, 1) ;
+                                       color: #75519E ;
                                        background-color: rgba($theme-primary-primary, 0) ;
                                     } 
                                 }
@@ -290,12 +290,12 @@ Theme Primary Color
                             .treeview-menu{
                                 li{                                    
                                     &.active{
-                                        background-color: rgba($theme-primary-primary, 0.0);
-                                        color: rgba($theme-primary-primary, 1);
+                                        // background-color: rgba($theme-primary-primary, 0.0);
+                                        color: #75519E;
                                         >a{
-                                            color: rgba($theme-primary-primary, 1);                                
+                                            color: #75519E;                                
                                             > i{
-                                               color: rgba($theme-primary-primary, 1) ;
+                                               color: #75519E ;
                                                background-color: rgba($theme-primary-primary, 0) ;
                                             } 
                                         }
@@ -363,7 +363,7 @@ Theme Primary Color
                     }
                     .treeview-menu{
                         li.active{
-                            background-color: rgba($theme-primary-primary, 0.0);
+                            // background-color: rgba($theme-primary-primary, 0.0);
                             color: rgba($white, 1);
                             > a{
                                 color: rgba($white, 1) !important;
@@ -391,7 +391,7 @@ Theme Primary Color
         &.sidebar-collapse{
             .sidebar-menu{
                 >li.active.menu-open{
-                    background-color: rgba($theme-primary-primary, 0.2);
+                    // background-color: rgba($theme-primary-primary, 0.2);
                     color: rgba($theme-primary-primary, 1);
                 }
             }
