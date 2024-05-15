@@ -355,6 +355,41 @@
                   </a>
                 </li>
               </ul>
+              <a
+                href="#"
+                style="
+                  background-color: #75519e;
+                  padding: 9px 12px;
+                  border-radius: 100px;
+                  margin: 40px 24px;
+                  gap: 8px;
+                "
+                class="d-flex align-items-center"
+              >
+                <img
+                  src="/assets/icons/custom/support.svg"
+                  alt="support"
+                  width="32"
+                  height="32"
+                />
+                <div>
+                  <p
+                    class="mb-0"
+                    style="font-size: 10px; font-weight: 500; color: white"
+                  >
+                    Butuh Informasi?
+                  </p>
+                  <p class="mb-0" style="font-size: 10px; color: white">
+                    Hubungi pihak Riliv di sini
+                  </p>
+                </div>
+                <img
+                  src="/assets/icons/custom/ic-right-white.svg"
+                  alt="right"
+                  width="18"
+                  height="28"
+                />
+              </a>
             </div>
           </div>
         </section>
@@ -365,195 +400,99 @@
         <div class="container-full">
           <!-- Main content -->
           <section class="content mb-4">
-            <div class="box-body">
-              <!-- Nav tabs -->
-              <ul class="nav nav-pills mb-20">
-                <li class="nav-item">
-                  <a
-                    href="#navpills2-2"
-                    class="nav-link active"
-                    data-bs-toggle="tab"
-                    aria-expanded="false"
-                    >Ubah Password</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    href="#navpills2-3"
-                    class="nav-link"
-                    data-bs-toggle="tab"
-                    aria-expanded="false"
-                    >Bantuan</a
-                  >
-                </li>
-              </ul>
-              <!-- Tab panes -->
-              <div class="tab-content">
-                <div id="navpills2-2" class="tab-pane active">
-                  <div class="wizard-content">
-                    <form action="#" class="tab-wizard wizard-circle">
-                      <!-- Step 1 -->
-                      <h6>Kirim Kode Verifikasi</h6>
-                      <section>
-                        <div class="form-group mt-3">
-                          <label for="emailAddress1" class="form-label"
-                            >Email Address :</label
-                          >
-                          <input
-                            type="email"
-                            class="form-control"
-                            id="emailAddress1"
-                          />
-                        </div>
-                      </section>
-                      <!-- Step 2 -->
-                      <h6>Masukkan Kode Verifikasi</h6>
-                      <section>
-                        <div class="row">
-                          <div
-                            class="d-flex justify-content-center mt-3"
-                            style="gap: 16px"
-                          >
-                            <input
-                              type="text"
-                              class="form-control table-title text-center"
-                              id="username1"
-                              style="
-                                width: 80px;
-                                height: 80px;
-                                font-size: 24px !important;
-                              "
-                            />
-                            <input
-                              type="text"
-                              class="form-control table-title text-center"
-                              id="username2"
-                              style="
-                                width: 80px;
-                                height: 80px;
-                                font-size: 24px !important;
-                              "
-                            />
-                            <input
-                              type="text"
-                              class="form-control table-title text-center"
-                              id="username3"
-                              style="
-                                width: 80px;
-                                height: 80px;
-                                font-size: 24px !important;
-                              "
-                            />
-                            <input
-                              type="text"
-                              class="form-control table-title text-center"
-                              id="username4"
-                              style="
-                                width: 80px;
-                                height: 80px;
-                                font-size: 24px !important;
-                              "
-                            />
-                          </div>
-                        </div>
-                      </section>
-                      <!-- Step 3 -->
-                      <h6>Ubah Password</h6>
-                      <section>
-                        <div class="form-group mt-3">
-                          <label for="password" class="form-label"
-                            >Password :</label
-                          >
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="password"
-                          />
-                        </div>
-                        <div class="form-group mt-3">
-                          <label for="passwordconfirmation" class="form-label"
-                            >Konfirmasi Password :</label
-                          >
-                          <input
-                            type="password"
-                            class="form-control"
-                            id="passwordconfirmation"
-                          />
-                        </div>
-                      </section>
-                    </form>
+            <div class="wizard-content">
+              <form action="#" class="tab-wizard wizard-circle">
+                <!-- Step 1 -->
+                <h6>Kirim Kode Verifikasi</h6>
+                <section>
+                  <div class="form-group mt-3">
+                    <label for="emailAddress1" class="form-label"
+                      >Email Address :</label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailAddress1"
+                    />
                   </div>
-                </div>
-                <div id="navpills2-3" class="tab-pane">
-                  <div
-                    class="d-flex justify-content-between align-items-center"
-                    style="
-                      background-color: #F9F8FF;
-                      border-radius: 24px;
-                      padding: 32px;
-                    "
-                  >
-                    <div class="d-flex align-items-center" style="gap: 24px">
-                      <img
-                        src="/assets/icons/custom/support.svg"
-                        alt="ic-support"
-                        width="60"
-                        height="60"
+                </section>
+                <!-- Step 2 -->
+                <h6>Masukkan Kode Verifikasi</h6>
+                <section>
+                  <div class="row">
+                    <div
+                      class="d-flex justify-content-center mt-3"
+                      style="gap: 16px"
+                    >
+                      <input
+                        type="text"
+                        class="form-control table-title text-center"
+                        id="username1"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          font-size: 24px !important;
+                        "
                       />
-                      <div>
-                        <h1 class="main-title">
-                          Butuh Informasi atau Bantuan?
-                        </h1>
-                        <p class="m-0" style="font-size: 14px; color: #1c395f">
-                          Butuh Informasi atau Bantuan?
-                        </p>
-                      </div>
+                      <input
+                        type="text"
+                        class="form-control table-title text-center"
+                        id="username2"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          font-size: 24px !important;
+                        "
+                      />
+                      <input
+                        type="text"
+                        class="form-control table-title text-center"
+                        id="username3"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          font-size: 24px !important;
+                        "
+                      />
+                      <input
+                        type="text"
+                        class="form-control table-title text-center"
+                        id="username4"
+                        style="
+                          width: 80px;
+                          height: 80px;
+                          font-size: 24px !important;
+                        "
+                      />
                     </div>
-                    <a href="#" class="secondary-purple">Hubungi Riliv</a>
                   </div>
-                </div>
-              </div>
+                </section>
+                <!-- Step 3 -->
+                <h6>Ubah Password</h6>
+                <section>
+                  <div class="form-group mt-3">
+                    <label for="password" class="form-label">Password :</label>
+                    <input type="password" class="form-control" id="password" />
+                  </div>
+                  <div class="form-group mt-3">
+                    <label for="passwordconfirmation" class="form-label"
+                      >Konfirmasi Password :</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordconfirmation"
+                    />
+                  </div>
+                </section>
+              </form>
             </div>
           </section>
           <!-- /.content -->
         </div>
       </div>
       <!-- /.content-wrapper -->
-      <div class="modal center-modal fade" id="modal-center" tabindex="-1">
-        <div class="modal-dialog">
-          <div class="modal-content" style="border-radius: 16px; padding: 24px 16px;">
-            <div class="modal-body">
-              <div class="text-center">
-                <img
-                  src="/assets/icons/custom/success.png"
-                  alt="success"
-                  width="153"
-                  height="100"
-                />
-              </div>
-              <h5
-                class="title-progress mt-3"
-                style="
-                  font-weight: 600 !important;
-                  text-align: center !important;
-                "
-              >
-                Berhasil Memberikan Akses
-              </h5>
-              <p class="text-center" style="font-size: 12px; color: #5887a4">
-                Akses telah diberikan kepada email yang bersangkutan.
-              </p>
-            </div>
-            <button
-              data-bs-dismiss="modal"
-              class="outline-purple"
-              style="flex: 1; background-color: #fff"
-            >
-              Oke
-            </button>
-          </div>
-        </div>
-      </div>
+
       <!-- Add the sidebar's background. This div must be placed immediately after the control sidebar -->
       <div class="control-sidebar-bg"></div>
     </div>
